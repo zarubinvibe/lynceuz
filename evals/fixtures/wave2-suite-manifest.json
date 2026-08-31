@@ -1,0 +1,17 @@
+{
+  "kind": "lynceuz_wave2_suite_manifest",
+  "files": [
+    {
+      "path": "evals/browser-containment.test.mjs",
+      "sha256": "sha256:637432b45ca544b9dbd8511522259d54692cc9153cb769b70ebe30748a5df837"
+    },
+    {
+      "path": "evals/fixtures/pf-containment-canary.mjs",
+      "sha256": "sha256:b52fd3530f05b49942c62e6fa92c52f57ae57fd80fdc456fca39608c0ebc7dc7"
+    },
+    {
+      "path": "evals/fixtures/pf-real-rules.txt",
+      "sha256": "sha256:d708bd71d06e4a13babbc9e9dc8b0c7838efd00143527ae50dcbe760a8a86152"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "lynceuz_p1_suite_manifest",
+  "schema_version": 1,
+  "baseline_manifest": {
+    "path": "evals/fixtures/p0-suite-hashes.json",
+    "sha256": "sha256:04a2b985fd0b98f49f19b9ac5781c3386f1c249e2fd196cb2927d924eefd3b92"
+  },
+  "files": [
+    {
+      "path": "evals/cloud.test.mjs",
+      "sha256": "sha256:636926aa663551f922d4d44972e6dcc542cfdc394c774ac8b7e5c3776c6a2cab",
+      "role": "cloud-contract",
+      "run_by_release_gate": true
+    },
+    {
+      "path": "evals/fixtures/interruption-worker.mjs",
+      "sha256": "sha256:7d1f3726539cb63166d669e9b4a4090986513be2659b29b6479a25de1be3261b",
+      "role": "recovery-fixture",
+      "run_by_release_gate": false
+    },
+    {
+      "path": "evals/p1-release.test.mjs",
+      "sha256": "sha256:284cdd160929499ee76cef20185e3f674b7fc1e6d33720672ca701e1bbdfd398",
+      "role": "gate-contract",
+      "run_by_release_gate": false
+    },
+    {
+      "path": "evals/recovery.test.mjs",
+      "sha256": "sha256:e5e51cf43c5025feadd7297274784cbc69494d26c036c50a4ddb9c6cf40aed95",
+      "role": "recovery-contract",
+      "run_by_release_gate": true
+    },
+    {
+      "path": "evals/search-budget.test.mjs",
+      "sha256": "sha256:3c9ac908913e3bc00155b4d83e94cadfffdb45c946d31cc3f80542c2f54d36ae",
+      "role": "search-budget-contract",
+      "run_by_release_gate": true
+    },
+    {
+      "path": "evals/search-cloud.test.mjs",
+      "sha256": "sha256:b218200d526a51e57984b479752b72a53390b60f4451005b2818571ccf6bfafc",
+      "role": "search-contract",
+      "run_by_release_gate": true
+    }
+  ]
+}

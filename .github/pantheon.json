@@ -1,0 +1,82 @@
+{
+  "schema_version": 3,
+  "family_id": "zarubinvibe-pantheon",
+  "catalog_version": "2026-08-31",
+  "project": {
+    "slug": "lynceuz",
+    "deity": "Lynceus",
+    "symbol": "the far-seeing lookout's shielded gaze and a sealed marble evidence tablet"
+  },
+  "visuals": {
+    "style_anchor_sha256": "ce524f9d22cb0092cb17aa280832e1b2ab2a77a0e01602065ec502232a3bb2d2",
+    "column_reference_sha256": "9d32edd56ac55c4dd6d0425a28a2ac35035e9ab09073fc8ce0c1414b2edfb1bd",
+    "presentation": {
+      "min_width": 1600,
+      "aspect_ratio": "16:9",
+      "readme_width": "100%"
+    },
+    "hero": {
+      "source_path": "docs/assets/pantheon/hero-source.png",
+      "source_sha256": "5299dc6eea2569def2f2aa46b041b5c4ceadf3c466e288a2d4e09a2a1cab8805",
+      "published_path": "docs/assets/pantheon/hero.png",
+      "published_sha256": "3bf81b73e957aa25d6e0436de3e03efd78c474f7532623f1931166cd0582d856"
+    },
+    "emblem": {
+      "source_path": "docs/assets/pantheon/emblem-source.png",
+      "source_sha256": "c4657bbc0b4de3d228830fb6e84f46ab488bdeeb14900fecb6e6a2c101d5c908",
+      "published_path": "docs/assets/pantheon/emblem.png",
+      "published_sha256": "6f43beb23ef63b6731e6ca60d17221cec270f586e716c930aff4f3df7e7cd81d"
+    },
+    "stages": [
+      {
+        "id": "address",
+        "title_en": "Check the address",
+        "title_ru": "Проверьте адрес",
+        "title_zh": "检查地址",
+        "diagram_en": "Address",
+        "diagram_ru": "Адрес",
+        "diagram_zh": "地址"
+      },
+      {
+        "id": "ladder",
+        "title_en": "Walk the free ladder",
+        "title_ru": "Пройдите лестницу",
+        "title_zh": "走完免费阶梯",
+        "diagram_en": "Ladder",
+        "diagram_ru": "Ступени",
+        "diagram_zh": "阶梯"
+      },
+      {
+        "id": "browser",
+        "title_en": "Open the contained browser",
+        "title_ru": "Откройте браузер под замком",
+        "title_zh": "打开受限浏览器",
+        "diagram_en": "Browser",
+        "diagram_ru": "Браузер",
+        "diagram_zh": "浏览器"
+      },
+      {
+        "id": "evidence",
+        "title_en": "Write the evidence",
+        "title_ru": "Запишите улику",
+        "title_zh": "写下证据",
+        "diagram_en": "Evidence",
+        "diagram_ru": "Улика",
+        "diagram_zh": "证据"
+      },
+      {
+        "id": "refusal",
+        "title_en": "Stop honestly",
+        "title_ru": "Остановитесь честно",
+        "title_zh": "诚实停下",
+        "diagram_en": "Stop",
+        "diagram_ru": "Стоп",
+        "diagram_zh": "停下"
+      }
+    ]
+  },
+  "receipts": {
+    "generation_path": ".github/pantheon/generation-receipt.json",
+    "visual_judge_path": ".github/pantheon/visual-judge-receipt.json"
+  }
+}

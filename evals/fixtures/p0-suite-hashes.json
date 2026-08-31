@@ -1,0 +1,82 @@
+{
+  "kind": "lynceuz_eval_baseline",
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "evals/.gitkeep",
+      "sha256": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evals/browser-hostile.test.mjs",
+      "sha256": "sha256:d219e51ccc2f1895736fcc36010a445db6d72e7ff732d6b98bb240da00907899"
+    },
+    {
+      "path": "evals/cli-native.test.mjs",
+      "sha256": "sha256:f2ea4cf3dac1afa0b01f273c49e6cb008037eb77e6bc191e493cd921fd97b9ac"
+    },
+    {
+      "path": "evals/cli.test.mjs",
+      "sha256": "sha256:1644e8a84866bfae1d05c6e4dd69631d342f579c943974733074856c38521519"
+    },
+    {
+      "path": "evals/extract-crawl.test.mjs",
+      "sha256": "sha256:953bc0aa0cdf3bc54b32d04007e023c80d964102f75a9cc6a1a0ade18f23a12f"
+    },
+    {
+      "path": "evals/fixtures/browser-hostile.mjs",
+      "sha256": "sha256:1bec9e4739f366f5f91401cbc784e3b6411e139960bdb3f215404428925b0e14"
+    },
+    {
+      "path": "evals/fixtures/direct-egress-probe.py",
+      "sha256": "sha256:7db832c54c7fc7810579ce102dad8ef8eb05bcee3b78b3a98dd772df14b46f2f"
+    },
+    {
+      "path": "evals/fixtures/fake-adapters.mjs",
+      "sha256": "sha256:143d77a613c3918a02ba92652c438efd4bcf72e88393ceb4c083fdf15989a2cd"
+    },
+    {
+      "path": "evals/fixtures/hostile-urls.json",
+      "sha256": "sha256:28128b1faff53c22bc73b27324cd5cc77eb644a1618b9bd00c02414a674f77d4"
+    },
+    {
+      "path": "evals/fixtures/native-http.mjs",
+      "sha256": "sha256:3fc3cfc8b9ebee33d2ddd200d2c4ab6f66d9b99133985e53d336fd6e71b828ee"
+    },
+    {
+      "path": "evals/fixtures/no-network.mjs",
+      "sha256": "sha256:acc0303a75e40c2db730c5501531234a2c7eb3b5fab142dad1a6777195da27b2"
+    },
+    {
+      "path": "evals/fixtures/p0-site.mjs",
+      "sha256": "sha256:00ccb5798e319f514ee2f9a36e2765f634cb9e30b202c0697fb4c38d5cdc49ad"
+    },
+    {
+      "path": "evals/local-fallback-process.test.mjs",
+      "sha256": "sha256:aa8188ec3568fb8957badd46508a2948e18bd56b15fa355f668c3e867b341772"
+    },
+    {
+      "path": "evals/native-url.test.mjs",
+      "sha256": "sha256:9011e3df5d7dc4347ace4aaa2adebf1b05d575675fc7e06d7a74d1a1cbba3284"
+    },
+    {
+      "path": "evals/p0-acceptance.test.mjs",
+      "sha256": "sha256:a6190c4dcaff155b8d4fd201e0b3d804450fd1175aafec5717cbf914eef8b421"
+    },
+    {
+      "path": "evals/policy.test.mjs",
+      "sha256": "sha256:25751538e547ea6b87ea3a23bbee8c50a89004035b45b2ecdd725cafc8d77e39"
+    },
+    {
+      "path": "evals/router.test.mjs",
+      "sha256": "sha256:63eb59858f780ab67eb088894be341d08c8f1172fbcbd7876a63ef3fdb8845e3"
+    },
+    {
+      "path": "evals/search-cloud.test.mjs",
+      "sha256": "sha256:b218200d526a51e57984b479752b72a53390b60f4451005b2818571ccf6bfafc"
+    },
+    {
+      "path": "evals/storage.test.mjs",
+      "sha256": "sha256:8552c2a44ed1ad056f6daa4c48492067af2cceb800330a969adf8c40d7332681"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "kind": "pantheon-generation",
+  "selection_mode": "managed-frontier",
+  "runtime": "codex",
+  "tool": "image_gen",
+  "route_id": "codex:image_gen:managed-frontier",
+  "model": {
+    "id": "provider-managed",
+    "revision": "provider-managed",
+    "tier": "frontier"
+  },
+  "quality": "highest",
+  "generation_id": "codex-session:01a05927-e4d8-7480-9729-131511a6b92f+01a0592d-5c0b-78b2-942f-e28fb0a445ff",
+  "generated_at": "2026-08-31T18:54:13.000Z",
+  "capability_snapshot": {
+    "checked_at": "2026-08-31T18:54:13.000Z",
+    "routes": [
+      {
+        "id": "codex:image_gen:managed-frontier",
+        "rank": 1,
+        "available": true,
+        "tier": "frontier",
+        "quality": "highest",
+        "model": {
+          "id": "provider-managed",
+          "revision": "provider-managed",
+          "tier": "frontier"
+        }
+      }
+    ]
+  },
+  "prompt": {
+    "path": ".github/pantheon/prompt.txt",
+    "sha256": "f8fa97dc130313742e1d93e0f7978d7a3def23857d8c25d7641ce9ec92df62d1"
+  },
+  "references": [
+    {
+      "role": "style-anchor",
+      "sha256": "ce524f9d22cb0092cb17aa280832e1b2ab2a77a0e01602065ec502232a3bb2d2"
+    },
+    {
+      "role": "column-reference",
+      "sha256": "9d32edd56ac55c4dd6d0425a28a2ac35035e9ab09073fc8ce0c1414b2edfb1bd"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "codex-managed",
+      "route_id": "codex:image_gen:managed-frontier",
+      "generation_id": "codex-session:01a05927-e4d8-7480-9729-131511a6b92f+01a0592d-5c0b-78b2-942f-e28fb0a445ff",
+      "prompt_sha256": "f8fa97dc130313742e1d93e0f7978d7a3def23857d8c25d7641ce9ec92df62d1",
+      "reference_sha256": [
+        "ce524f9d22cb0092cb17aa280832e1b2ab2a77a0e01602065ec502232a3bb2d2",
+        "9d32edd56ac55c4dd6d0425a28a2ac35035e9ab09073fc8ce0c1414b2edfb1bd"
+      ],
+      "outputs": [
+        {
+          "role": "hero",
+          "source_sha256": "5299dc6eea2569def2f2aa46b041b5c4ceadf3c466e288a2d4e09a2a1cab8805",
+          "published_sha256": "3bf81b73e957aa25d6e0436de3e03efd78c474f7532623f1931166cd0582d856"
+        },
+        {
+          "role": "emblem",
+          "source_sha256": "c4657bbc0b4de3d228830fb6e84f46ab488bdeeb14900fecb6e6a2c101d5c908",
+          "published_sha256": "6f43beb23ef63b6731e6ca60d17221cec270f586e716c930aff4f3df7e7cd81d"
+        }
+      ]
+    }
+  ],
+  "winner_id": "codex-managed",
+  "notes": "Native route output was 1672x941 for the hero, below the 1920x1000 floor; the same frame was resampled to 3840x2160 with sips, no re-render and no recomposition. The emblem is native 1254x1254 and was not upscaled."
+}

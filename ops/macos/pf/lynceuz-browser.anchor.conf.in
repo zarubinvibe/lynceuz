@@ -1,0 +1,3 @@
+pass out quick inet proto tcp from any to 127.0.0.1 port 48191 user __LYNCEUZ_UID__
+block drop out quick inet from any to any user __LYNCEUZ_UID__
+block drop out quick inet6 from any to any user __LYNCEUZ_UID__

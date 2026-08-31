@@ -1,0 +1,348 @@
+{
+  "schema_version": 1,
+  "owner": "zarubinvibe",
+  "slug": "lynceuz",
+  "languages": [
+    "en",
+    "ru",
+    "zh"
+  ],
+  "license_badge": "MIT",
+  "status_badge": "v0.1-early",
+  "quick_code": "node --version\ngit clone https://github.com/zarubinvibe/lynceuz.git\ncd lynceuz\nnode scripts/onboard.mjs\nnode src/lynceuz.mjs health\nnode src/lynceuz.mjs url 'https://example.org/' --json",
+  "stages": {
+    "address": {
+      "en": {
+        "short": "The address is checked before anything is fetched.",
+        "body": "Lynceuz reads the URL first. Private ranges, loopback, link-local and metadata addresses are refused outright, and so is every redirect that tries to land on one. Then it reads the whole `robots.txt`, not only the lines that say no.",
+        "result": "a target that is public, or a refusal before a single byte moved.",
+        "alt": "Lynceus checking an address against a marble tablet"
+      },
+      "ru": {
+        "short": "Адрес проверяется до того, как что-то скачано.",
+        "body": "Сначала Линкей читает адрес. Частные диапазоны, loopback, link-local и метаданные облака отбиваются сразу, и каждый редирект, который пробует туда увести, тоже. Потом читается весь `robots.txt`, а не одни запреты.",
+        "result": "публичная цель или отказ еще до первого байта.",
+        "alt": "Линкей сверяет адрес с мраморной табличкой"
+      },
+      "zh": {
+        "short": "先检查地址，然后才去取内容。",
+        "body": "Lynceuz 先读地址。内网段、回环地址、链路本地地址和云元数据地址一律拒绝，任何想跳到这些地址的重定向也一样。接着它会完整读一遍 `robots.txt`，不是只看写着「禁止」的那几行。",
+        "result": "一个公开的目标，或者在传输任何字节之前就拒绝。",
+        "alt": "林叩斯在大理石板前核对地址"
+      }
+    },
+    "ladder": {
+      "en": {
+        "short": "Free routes are tried in order, cheapest first.",
+        "body": "A plain request comes first. If the page is drawn by JavaScript, Lynceuz looks for the doors the site left open: the sitemap named in `robots.txt`, the document pages themselves, an RSS feed, a print version. Each rung is recorded whether it worked or not.",
+        "result": "the content from the first rung that actually answered.",
+        "alt": "A ladder of open marble doors, each one wider than the last"
+      },
+      "ru": {
+        "short": "Бесплатные пути пробуются по порядку, от самого дешевого.",
+        "body": "Сначала обычный запрос. Если страницу рисует JavaScript, Линкей ищет двери, которые сайт оставил открытыми: карту сайта из `robots.txt`, сами страницы документов, ленту RSS, версию для печати. Каждая ступень записывается — и удачная, и пустая.",
+        "result": "содержимое с той ступени, которая действительно ответила.",
+        "alt": "Лестница из открытых мраморных дверей, каждая шире предыдущей"
+      },
+      "zh": {
+        "short": "按顺序尝试免费路径，先试最省的那条。",
+        "body": "先发普通请求。如果页面靠 JavaScript 渲染，Lynceuz 就去找网站自己留下的门：`robots.txt` 里写明的站点地图、文档页本身、RSS 源、打印版本。每一级都会记录下来，成功和落空都记。",
+        "result": "来自第一级真正给出回应的内容。",
+        "alt": "一排敞开的大理石门，一扇比一扇宽"
+      }
+    },
+    "browser": {
+      "en": {
+        "short": "A browser opens only when a person's route is the only route.",
+        "body": "Most pages never need one. When a site answers only the way it answers a human, the browser runs as a separate unprivileged account whose outbound traffic is blocked by a packet-filter rule, except one loopback port. A canary probes that rule before the page loads.",
+        "result": "a rendered page, or a closed door that says which rule stopped it.",
+        "alt": "A lantern behind glass, its light contained to one narrow beam"
+      },
+      "ru": {
+        "short": "Браузер открывается, только если человеческий путь — единственный.",
+        "body": "Большинству страниц он не нужен. Когда сайт отвечает лишь так, как отвечает человеку, браузер идет от отдельного непривилегированного пользователя, чей исходящий трафик режет правило пакетного фильтра — кроме одного порта на петле. Канарейка проверяет это правило до загрузки страницы.",
+        "result": "отрисованная страница или закрытая дверь с указанием правила.",
+        "alt": "Фонарь за стеклом, свет которого сведен в один узкий луч"
+      },
+      "zh": {
+        "short": "只有当「人的路径」是唯一路径时才打开浏览器。",
+        "body": "大多数页面用不上它。如果某个网站只以对人的方式作答，浏览器就以一个独立的非特权账号运行，它的出站流量被包过滤规则拦住，只留一个回环端口。页面加载之前，探针会先验证这条规则是否真的生效。",
+        "result": "一个渲染好的页面，或者一扇写明被哪条规则挡住的门。",
+        "alt": "玻璃罩中的提灯，光被收束成一道窄束"
+      }
+    },
+    "evidence": {
+      "en": {
+        "short": "Every run leaves something another person can check.",
+        "body": "Lynceuz writes the bytes it received and a JSON manifest beside them: the engine that won, every rung it tried, the URL, the timestamp, a SHA-256 of the content, the cost, and any warning it raised. The cost line reads zero because the budget is zero.",
+        "result": "an artifact and a manifest you can hand to somebody else.",
+        "alt": "A sealed tablet with a carved hash beside a scroll"
+      },
+      "ru": {
+        "short": "После каждого запуска остается то, что можно перепроверить.",
+        "body": "Линкей кладет рядом полученные байты и манифест: движок-победитель, все пройденные ступени, адрес, время, SHA-256 содержимого, стоимость и предупреждения. В строке стоимости стоит ноль, потому что бюджет — ноль.",
+        "result": "артефакт и манифест, которые можно отдать другому человеку.",
+        "alt": "Запечатанная табличка с высеченным хэшем рядом со свитком"
+      },
+      "zh": {
+        "short": "每次运行都会留下别人可以复核的东西。",
+        "body": "Lynceuz 会把收到的字节和一份 JSON 清单一起写下来：胜出的引擎、试过的每一级、网址、时间戳、内容的 SHA-256、花费，以及它提出的任何警告。花费那一行写着零，因为预算就是零。",
+        "result": "一份产物和一份清单，可以直接交给别人。",
+        "alt": "一块刻着哈希的封印石板，旁边是一卷书"
+      }
+    },
+    "refusal": {
+      "en": {
+        "short": "When the safe routes run out, it says so and stops.",
+        "body": "A blocked run returns a typed refusal with the reason and the list of rungs already tried. Nothing is guessed, nothing is filled in from memory, and no paid route quietly opens to rescue the number. A refusal you can read beats a result you cannot trust.",
+        "result": "a named reason, and the exact point where the road ended.",
+        "alt": "A lookout lowering his hand before a shut gate"
+      },
+      "ru": {
+        "short": "Когда безопасные пути кончились, он говорит это и останавливается.",
+        "body": "Закрытый запуск возвращает типизированный отказ с причиной и списком пройденных ступеней. Ничего не додумывается, ничего не берется по памяти, и ни один платный путь не открывается тихонько, чтобы спасти цифру. Отказ, который можно прочитать, лучше результата, которому нельзя верить.",
+        "result": "названная причина и точное место, где дорога кончилась.",
+        "alt": "Впередсмотрящий опускает руку перед закрытыми воротами"
+      },
+      "zh": {
+        "short": "安全的路都走完了，它就直说并停下。",
+        "body": "被挡住的运行会返回一个带类型的拒绝，附上原因和已经试过的所有层级。不猜测，不凭记忆补齐，也不会悄悄打开付费路径去救那个数字。一个读得懂的拒绝，胜过一个不敢信的结果。",
+        "result": "一个写明的原因，以及路走到头的确切位置。",
+        "alt": "瞭望者在紧闭的门前放下手"
+      }
+    }
+  },
+  "text": {
+    "en": {
+      "name": "Lynceuz",
+      "title": "Lynceuz",
+      "tagline": "Collect public web evidence for zero monetary cost, or stop with an honest reason.",
+      "hero_alt": "Lynceus the lookout beside a white marble column, watching a bright ivory horizon",
+      "welcome": "I built Lynceuz because a scraper that quietly changes the route, spends money, or invents a result is worse than no result. I wanted a small tool that stays on public ground and leaves evidence another person can verify.\n\nIt gives you the bytes it actually reached, a manifest, and a hash. When access is denied or the safe routes run out, it says so and stops.",
+      "what": "Lynceuz is a command-line tool that fetches public web pages and writes down what it did. You give it a URL. It picks a free route, saves the content, and saves a manifest next to it holding the address, the time, a SHA-256 and the cost. Lynceus was the Argo's lookout, the one who could see through earth and water and report exactly what he saw.",
+      "why": "Most scrapers are hard to trust twice. They fall back to something paid, or they hand you a page and no way to tell where it came from. Lynceuz keeps the receipt. A month later you can still show which engine answered, at what hour, and prove the bytes have not changed.",
+      "advantage": "a refusal you can read, instead of a result you cannot check.",
+      "better": "When a door is shut, Lynceuz names the door. It does not pad the gap with a guess, and it does not reach for a paid route to make the number look better. That is the whole trade: fewer results, and every one of them defensible.",
+      "how": "Five steps, always in this order. Each one either hands the work to the next or stops with a reason.",
+      "quick_intro": "Node 20 or newer is the only thing you need. Nothing is downloaded on install, because there is nothing to download.",
+      "quick_extra": "Prefer not to clone? `npx github:zarubinvibe/lynceuz health` runs it straight from GitHub, and the [ZIP archive](https://github.com/zarubinvibe/lynceuz/archive/refs/heads/main.zip) works offline once it is unpacked. First install of any kind goes easier as a conversation: run `/lynceuz-setup` in Claude Code and it walks you through, asking before it touches anything.",
+      "quick_result": "a health table showing which engines are open, and your first saved manifest.",
+      "compare": [
+        [
+          "Lynceuz",
+          "You need proof the fetch happened the way you say",
+          "Content, manifest, hash, cost, and every route it tried",
+          "Fewer pages: closed doors stay closed"
+        ],
+        [
+          "A paid scraping API",
+          "You need many pages fast and the bill is fine",
+          "High volume and someone else's proxies",
+          "A monthly cost, and their word for where the bytes came from"
+        ],
+        [
+          "A browser automation script you wrote",
+          "The job is one site you know well",
+          "Full control of the page",
+          "You maintain it, and it usually keeps no evidence"
+        ],
+        [
+          "Copy and paste by hand",
+          "One page, one time",
+          "Exactly what you saw",
+          "Nothing to re-check later, and it does not scale"
+        ]
+      ],
+      "glossary": [
+        [
+          "Manifest",
+          "The small JSON file saved next to the content saying where it came from"
+        ],
+        [
+          "SHA-256",
+          "A fingerprint of a file: change one byte and the fingerprint changes"
+        ],
+        [
+          "robots.txt",
+          "A file where a site tells crawlers what is welcome and what is not"
+        ],
+        [
+          "Containment",
+          "An operating-system rule that stops a program from talking to the network"
+        ]
+      ],
+      "safety": [
+        "Public targets only. Loopback, private ranges and cloud metadata addresses are refused, redirects included.",
+        "`robots.txt` is read whole. A `Disallow` is never worked around, not even through the browser.",
+        "Search engine results are never scraped. Google, Bing and their neighbours are out of scope.",
+        "The money budget is zero, and no flag quietly turns a paid route on.",
+        "No telemetry. Nothing about your runs leaves your machine.",
+        "The browser path runs as a separate unprivileged account with its outbound traffic blocked at the packet filter."
+      ],
+      "safety_tail": "The full model, including how the containment rule is installed and rolled back, lives in [SECURITY.md](SECURITY.md).",
+      "status": "Early. The core, the ladder and the evidence trail are done and covered by tests that run without the internet. Browser containment is proven on macOS and stays closed elsewhere rather than pretending. Expect the command surface to still move.",
+      "limits": [
+        "Containment is proven on macOS today. On other systems the browser path refuses instead of guessing.",
+        "A site that blocks you keeps blocking you. Lynceuz reports the closed door; it does not open it.",
+        "Captchas are detected, never solved. The run slows or stops and a person decides.",
+        "There is no hosted service and no account. It runs on your machine or not at all."
+      ],
+      "docs": "Deeper reading: [the onboarding](docs/ONBOARDING.md) for the first run, [the discovery ladder](docs/discovery-ladder.md) for how routes are ordered, [the access policy](docs/access-policy.md) for where the line is drawn, and [the containment proof](docs/wave2-containment-proof.md) for how the browser rule was measured.",
+      "license": "MIT. See [LICENSE](LICENSE)."
+    },
+    "ru": {
+      "name": "Линкей",
+      "title": "Линкей",
+      "tagline": "Собирает доказательства из открытого веба за ноль рублей или честно останавливается с причиной.",
+      "hero_alt": "Впередсмотрящий Линкей у белой мраморной колонны смотрит на светлый горизонт",
+      "welcome": "Я сделал Lynceuz, потому что сборщик, который незаметно меняет маршрут, тратит деньги или выдумывает результат, хуже, чем отсутствие результата. Мне нужен был небольшой инструмент, который держится открытой территории и оставляет улику, проверяемую другим человеком.\n\nОн отдает те байты, до которых действительно добрался, манифест и хэш. Когда доступ закрыт или безопасные пути кончились, он говорит это и останавливается.",
+      "what": "Lynceuz — консольный инструмент: забирает публичные страницы и записывает, что именно сделал. Вы даете адрес. Он выбирает бесплатный путь, сохраняет содержимое и кладет рядом манифест с адресом, временем, SHA-256 и стоимостью. Линкей был впередсмотрящим «Арго» — тем, кто видел сквозь землю и воду и докладывал ровно то, что видел.",
+      "why": "Большинству сборщиков трудно поверить дважды. Они срываются на платное или отдают страницу без единого способа понять, откуда она. Линкей хранит квитанцию. Через месяц вы все еще покажете, какой движок ответил и в котором часу, и докажете, что байты не менялись.",
+      "advantage": "отказ, который можно прочитать, вместо результата, который нельзя проверить.",
+      "better": "Если дверь закрыта, Линкей называет дверь. Он не затыкает дыру догадкой и не тянется к платному пути, чтобы цифра выглядела приличнее. В этом весь размен: результатов меньше, зато за каждый можно ответить.",
+      "how": "Пять шагов, всегда в этом порядке. Каждый либо передает работу дальше, либо останавливается с причиной.",
+      "quick_intro": "Нужен только Node 20 или новее. При установке ничего не качается, потому что качать нечего.",
+      "quick_extra": "Не хотите клонировать? `npx github:zarubinvibe/lynceuz health` запускает прямо из GitHub, а [ZIP-архив](https://github.com/zarubinvibe/lynceuz/archive/refs/heads/main.zip) работает и без сети, когда распакован. Любая первая установка идет легче разговором: наберите `/lynceuz-setup` в Claude Code — он проведет по шагам и спросит до того, как что-то тронет.",
+      "quick_result": "таблица здоровья с открытыми и закрытыми движками и ваш первый сохраненный манифест.",
+      "compare": [
+        [
+          "Линкей",
+          "Нужно доказать, что запрос прошел именно так",
+          "Содержимое, манифест, хэш, стоимость и все пройденные пути",
+          "Страниц меньше: закрытые двери остаются закрытыми"
+        ],
+        [
+          "Платный scraping-API",
+          "Нужно много страниц быстро и счет не пугает",
+          "Объем и чужие прокси",
+          "Ежемесячная плата и их слово о том, откуда байты"
+        ],
+        [
+          "Свой скрипт на автоматизации браузера",
+          "Задача — один хорошо знакомый сайт",
+          "Полный контроль над страницей",
+          "Чинить его вам, и улик он обычно не оставляет"
+        ],
+        [
+          "Копировать руками",
+          "Одна страница, один раз",
+          "Ровно то, что видели",
+          "Перепроверить потом нечем, и это не масштабируется"
+        ]
+      ],
+      "glossary": [
+        [
+          "Manifest",
+          "Маленький JSON рядом с содержимым: откуда оно взялось"
+        ],
+        [
+          "SHA-256",
+          "Отпечаток файла: изменился байт — изменился отпечаток"
+        ],
+        [
+          "robots.txt",
+          "Файл, где сайт говорит краулерам, что можно, а что нет"
+        ],
+        [
+          "Containment",
+          "Правило операционной системы, запирающее программе выход в сеть"
+        ]
+      ],
+      "safety": [
+        "Только публичные цели. Loopback, частные диапазоны и адреса метаданных облака отбиваются, вместе с редиректами туда.",
+        "`robots.txt` читается целиком. `Disallow` не обходится ничем, в том числе браузером.",
+        "Чужая поисковая выдача не скрапится. Google, Bing и подобные — вне игры.",
+        "Денежный бюджет равен нулю, и ни один флаг не открывает платный путь тихо.",
+        "Никакой телеметрии. О ваших запусках не уходит ничего.",
+        "Браузерный путь идет от отдельного непривилегированного пользователя, чей исходящий трафик режется пакетным фильтром."
+      ],
+      "safety_tail": "Полная модель, включая установку и откат правила containment, лежит в [SECURITY.md](SECURITY.md).",
+      "status": "Ранняя версия. Ядро, лестница путей и след улик готовы и покрыты тестами, которым не нужен интернет. Containment браузера доказан на macOS, а на других системах путь остается закрытым вместо притворства. Набор команд еще будет двигаться.",
+      "limits": [
+        "Containment доказан сегодня на macOS. На других системах браузерный путь отказывает, а не гадает.",
+        "Сайт, который вас блокирует, продолжит блокировать. Линкей сообщит о закрытой двери, но не откроет ее.",
+        "Капчу он распознает, но не решает. Запуск замедляется или встает, и решает человек.",
+        "Ни размещенного сервиса, ни аккаунта. Работает на вашей машине или не работает вовсе."
+      ],
+      "docs": "Что почитать дальше: [онбординг](docs/ONBOARDING.ru.md) для первого запуска, [лестница разведки](docs/discovery-ladder.md) о порядке путей, [политика доступа](docs/access-policy.md) о том, где проходит граница, и [доказательство containment](docs/wave2-containment-proof.md) о том, как измерялось правило браузера.",
+      "license": "MIT. См. [LICENSE](LICENSE)."
+    },
+    "zh": {
+      "name": "Lynceuz",
+      "title": "Lynceuz",
+      "tagline": "以零金钱成本收集公开网页证据，或者给出诚实的理由并停下。",
+      "hero_alt": "瞭望者林叩斯站在白色大理石柱旁，望向明亮的象牙色地平线",
+      "welcome": "我做 Lynceuz，是因为一个悄悄换路线、悄悄花钱、或者干脆编出结果的抓取工具，比没有结果更糟。我想要一个小工具，它待在公开的地面上，并留下别人可以核验的证据。\n\n它交给你的是它真正取到的字节、一份清单和一个哈希。当访问被拒绝，或者安全的路都走完了，它会直说并停下。",
+      "what": "Lynceuz 是一个命令行工具：抓取公开网页，并把自己做过的事记下来。你给它一个网址。它挑一条免费路径，保存内容，并在旁边保存一份清单，里面有网址、时间、SHA-256 和花费。林叩斯是阿尔戈号的瞭望者，能看穿大地与海水，并如实报告他看见的东西。",
+      "why": "大多数抓取工具很难被信任第二次。它们要么退回到付费方案，要么把页面丢给你，却没有任何办法判断它从哪儿来。Lynceuz 把凭据留着。一个月后你依然能说清是哪个引擎回应的、在几点，并证明那些字节没有变过。",
+      "advantage": "一个读得懂的拒绝，而不是一个无法核验的结果。",
+      "better": "门关着的时候，Lynceuz 会指出是哪扇门。它不用猜测去填补空缺，也不会伸手去够付费路径，好让数字看着体面一些。这就是全部的取舍：结果更少，但每一个都站得住。",
+      "how": "五个步骤，顺序固定。每一步要么把工作交给下一步，要么带着原因停下。",
+      "quick_intro": "你只需要 Node 20 或更新的版本。安装时不会下载任何东西，因为本来就没有可下载的。",
+      "quick_extra": "不想 clone？`npx github:zarubinvibe/lynceuz health` 可以直接从 GitHub 运行，[ZIP 压缩包](https://github.com/zarubinvibe/lynceuz/archive/refs/heads/main.zip)解压后离线也能用。任何一次首装，用对话的方式都更顺：在 Claude Code 里运行 `/lynceuz-setup`，它会一步步带着你走，动手之前先问你。",
+      "quick_result": "一张健康表，显示哪些引擎开着，以及你的第一份清单。",
+      "compare": [
+        [
+          "Lynceuz",
+          "你需要证明这次抓取确实照你说的方式发生",
+          "内容、清单、哈希、花费，以及试过的每一条路",
+          "页面更少：关着的门就是关着的"
+        ],
+        [
+          "付费抓取 API",
+          "你要快速拿到大量页面，账单不成问题",
+          "高吞吐量和别人的代理",
+          "每月费用，以及字节来源只能听他们说"
+        ],
+        [
+          "自己写的浏览器自动化脚本",
+          "任务只针对一个你很熟的站点",
+          "对页面的完全控制",
+          "维护归你，而且通常不留证据"
+        ],
+        [
+          "人工复制粘贴",
+          "一个页面，只做一次",
+          "你看见的就是那样",
+          "事后无从复核，也没法扩大规模"
+        ]
+      ],
+      "glossary": [
+        [
+          "Manifest",
+          "清单：与内容并排保存的小 JSON，说明它从哪儿来"
+        ],
+        [
+          "SHA-256",
+          "文件的指纹：改动一个字节，指纹就变"
+        ],
+        [
+          "robots.txt",
+          "网站用来告诉爬虫哪些欢迎、哪些不欢迎的文件"
+        ],
+        [
+          "Containment",
+          "封禁：一条操作系统规则，阻止程序连接网络"
+        ]
+      ],
+      "safety": [
+        "只针对公开目标。回环地址、内网段和云元数据地址一律拒绝，重定向也算。",
+        "`robots.txt` 会被完整读取。`Disallow` 绝不绕过，用浏览器也不行。",
+        "绝不抓取搜索引擎的结果页。Google、Bing 及同类都不在范围内。",
+        "金钱预算为零，没有任何开关会悄悄打开付费路径。",
+        "没有遥测。关于你运行的一切都不会离开你的机器。",
+        "浏览器路径以一个独立的非特权账号运行，它的出站流量在包过滤层被拦住。"
+      ],
+      "safety_tail": "完整的模型，包括封禁规则如何安装与回滚，见 [SECURITY.md](SECURITY.md)。",
+      "status": "早期阶段。核心、路径阶梯和证据链已经完成，并由无需联网的测试覆盖。浏览器封禁已在 macOS 上得到验证，在其他系统上宁可关闭也不假装可用。命令界面还会变动。",
+      "limits": [
+        "封禁目前只在 macOS 上得到验证。在其他系统上，浏览器路径选择拒绝而不是猜测。",
+        "会拦你的站点还是会拦你。Lynceuz 会报告那扇关着的门，但不会去开它。",
+        "验证码只识别，不破解。运行会放慢或停下，由人来决定。",
+        "没有托管服务，也没有账号。要么在你自己的机器上跑，要么就不跑。"
+      ],
+      "docs": "继续阅读：[上手指南](docs/ONBOARDING.zh.md)介绍第一次运行，[探索阶梯](docs/discovery-ladder.md)说明路径的排序，[访问策略](docs/access-policy.md)划出边界，[封禁验证](docs/wave2-containment-proof.md)记录浏览器规则是怎么测出来的。",
+      "license": "MIT。见 [LICENSE](LICENSE)。"
+    }
+  }
+}

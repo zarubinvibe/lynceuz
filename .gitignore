@@ -1,0 +1,27 @@
+# Секреты — никогда в git
+.env
+.env.*
+*secret*
+*credential*
+*.pem
+id_rsa*
+
+# Артефакты
+node_modules/
+dist/
+build/
+runs/
+.firecrawl/
+.lynceuz/
+.pytest_cache/
+.coverage
+__pycache__/
+*.log
+.DS_Store
+
+# Карта секретов (если положена в проект)
+**/references/secrets-map.md
+
+# Состояние агентов и конвейера - никогда в git
+.helioz/
+graphify-out/

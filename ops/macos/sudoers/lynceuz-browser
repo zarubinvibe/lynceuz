@@ -1,0 +1,8 @@
+Cmnd_Alias LYNCEUZ_PF_READ = /sbin/pfctl -s info, /sbin/pfctl -a com.lynceuz/browser -sr
+_lynceuz ALL = (root) NOPASSWD: NOEXEC: LYNCEUZ_PF_READ
+# __LYNCEUZ_OWNER__ is filled in at install time with the owner's own login, so the
+# right follows whoever installed it instead of a hardcoded name or the whole admin group.
+# The owner running the browser gate reads the same two PF facts without a password.
+__LYNCEUZ_OWNER__ ALL = (root) NOPASSWD: NOEXEC: LYNCEUZ_PF_READ
+Cmnd_Alias LYNCEUZ_CONTAINED_NODE = /usr/local/bin/node
+__LYNCEUZ_OWNER__ ALL = (_lynceuz) NOPASSWD: NOEXEC: LYNCEUZ_CONTAINED_NODE

@@ -1,0 +1,41 @@
+{
+  "name": "lynceuz",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first CLI that collects public web evidence at zero cost, or stops with an honest reason.",
+  "type": "module",
+  "bin": {
+    "lynceuz": "src/lynceuz.mjs"
+  },
+  "scripts": {
+    "test": "npm run test:offline",
+    "test:offline": "node --test evals/*.test.mjs",
+    "check": "for file in src/*.mjs; do node --check \"$file\" || exit; done"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "keywords": [
+    "scraping",
+    "public-web",
+    "evidence",
+    "manifest",
+    "zero-cost",
+    "local-first",
+    "cli",
+    "vibe-coding",
+    "coding-agents",
+    "agent-skills",
+    "olympuz"
+  ],
+  "homepage": "https://github.com/zarubinvibe/lynceuz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zarubinvibe/lynceuz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zarubinvibe/lynceuz/issues"
+  },
+  "author": "Filipp Zarubin"
+}

@@ -1,0 +1,27 @@
+=== HERO (16:9 landscape) ===
+Use case: stylized-concept
+Asset type: public GitHub README hero
+Primary request: A far-seeing lookout reads a bright public horizon and seals what he actually saw as evidence another person can verify.
+Input images: Image 1 is the immutable Pantheon style reference; Image 2 is the required family-signature column.
+Subject: Lynceus, the far-seeing Argonaut lookout, standing in calm profile with one hand raised to shield his eyes as he scans the horizon; beside him a sealed white marble evidence tablet with a muted gold seal; thin sky-blue ribbons of public data flow toward him from the open distance
+Style/medium: premium restrained 3D product render, warm ivory Apple-like presentation, white marble, frosted glass
+Composition/framing: 16:9 landscape, generous negative space, full objects clear of edges, classical column clearly visible
+Lighting/mood: soft daylight from upper left, long gentle shadows, calm and confident
+Color palette: ivory #F3EFE8, white marble, sky blue #B8D6EA, muted gold #C9A87A, charcoal #3E3A36
+Constraints: preserve the reference style; preserve a recognizable classical column; use the deity and symbol exactly; sky blue marks the public data flow and muted gold marks the sealed evidence; highest final quality
+Avoid: dark background, black background, neon, purple gradient, smoky cinema lighting, heavy bronze, illegible text, watermark, logo drift, blindfold, owl, scales, helmet, sun crown, lightning bolt
+Text (verbatim): No readable text, no letters.
+
+=== EMBLEM (1:1 square) ===
+Use case: stylized-concept
+Asset type: public GitHub README emblem
+Primary request: A single compact brand mark for a tool that looks farther than others and leaves proof of what it saw.
+Input images: Image 1 is the immutable Pantheon style reference; Image 2 is the required family-signature column.
+Subject: a white marble classical column standing centred, with the far-seeing eye of Lynceus rendered as a calm sky-blue lens set into the column shaft, and a small muted gold seal resting at the column base
+Style/medium: premium restrained 3D product render, warm ivory Apple-like presentation, white marble, frosted glass
+Composition/framing: 1:1 square, generous negative space, full objects clear of edges, classical column clearly visible
+Lighting/mood: soft daylight from upper left, long gentle shadows, calm and confident
+Color palette: ivory #F3EFE8, white marble, sky blue #B8D6EA, muted gold #C9A87A, charcoal #3E3A36
+Constraints: preserve the reference style; preserve a recognizable classical column; use the deity and symbol exactly; sky blue marks the far-seeing lens and muted gold marks the sealed evidence; highest final quality
+Avoid: dark background, black background, neon, purple gradient, smoky cinema lighting, heavy bronze, illegible text, watermark, logo drift, blindfold, owl, scales, helmet, sun crown, lightning bolt
+Text (verbatim): No readable text, no letters.

@@ -1,0 +1,37 @@
+{
+  "allow": [
+    { "input": "https://example.com/path#evidence", "canonical": "https://example.com/path" },
+    { "input": "http://93.184.216.34/", "canonical": "http://93.184.216.34/" },
+    { "input": "https://bücher.de/", "canonical": "https://xn--bcher-kva.de/" },
+    { "input": "https://example.com:443/a", "canonical": "https://example.com/a" }
+  ],
+  "deny": [
+    "file:///etc/passwd",
+    "data:text/plain,no",
+    "javascript:alert(1)",
+    "ftp://example.com/file",
+    "https://user@example.com/",
+    "https://user:password@example.com/",
+    "https://example.com:8080/",
+    "https://example.com/?access_token=secret-value",
+    "https://example.com/?Api-Key=secret-value",
+    "https://example.com/?client_secret=secret-value",
+    "https://example.com\\@127.0.0.1/",
+    "https://example.com%2f@127.0.0.1/",
+    "https://example.com/%0d%0aHost:evil.test",
+    "http://localhost/",
+    "http://localhost./",
+    "http://service.internal/",
+    "http://example.test/",
+    "http://127.1/",
+    "http://2130706433/",
+    "http://0x7f000001/",
+    "http://017700000001/",
+    "http://169.254.169.254/latest/meta-data/",
+    "http://[::1]/",
+    "http://[fc00::1]/",
+    "http://[fe80::1]/",
+    "http://[::ffff:127.0.0.1]/",
+    "http://[fe80::1%25en0]/"
+  ]
+}

@@ -1,0 +1,3 @@
+pass out quick inet proto tcp from any to 127.0.0.1 port = 48191 user = 401 flags S/SA keep state
+block drop out quick inet all user = 401
+block drop out quick inet6 all user = 401
