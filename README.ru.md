@@ -4,7 +4,7 @@
 
 [English](README.md) · [中文](README.zh.md)
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Stars](https://img.shields.io/github/stars/zarubinvibe/lynceuz?style=flat&color=C9A87A)](https://github.com/zarubinvibe/lynceuz/stargazers) [![Status](https://img.shields.io/badge/status-v0.1-early-brightgreen.svg)](https://github.com/zarubinvibe/lynceuz) [![Olympuz](https://img.shields.io/badge/olympuz-family-B8D6EA.svg)](https://github.com/zarubinvibe/athena#olympuz-family)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Stars](https://img.shields.io/github/stars/zarubinvibe/lynceuz?style=flat&color=C9A87A)](https://github.com/zarubinvibe/lynceuz/stargazers) [![Status](https://img.shields.io/badge/status-v0.1%20early-brightgreen.svg)](https://github.com/zarubinvibe/lynceuz) [![Olympuz](https://img.shields.io/badge/olympuz-family-B8D6EA.svg)](https://github.com/zarubinvibe/athena#olympuz-family)
 
 <p align="center"><img src="docs/assets/pantheon/hero.png" alt="Впередсмотрящий Линкей у белой мраморной колонны смотрит на светлый горизонт" width="100%"></p>
 

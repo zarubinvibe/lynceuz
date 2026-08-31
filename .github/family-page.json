@@ -8,7 +8,7 @@
     "zh"
   ],
   "license_badge": "MIT",
-  "status_badge": "v0.1-early",
+  "status_badge": "v0.1%20early",
   "quick_code": "node --version\ngit clone https://github.com/zarubinvibe/lynceuz.git\ncd lynceuz\nnode scripts/onboard.mjs\nnode src/lynceuz.mjs health\nnode src/lynceuz.mjs url 'https://example.org/' --json",
   "stages": {
     "address": {
