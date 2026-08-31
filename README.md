@@ -1,6 +1,6 @@
 # Lynceuz
 
-Collect public web evidence for zero monetary cost, or stop with an honest reason.
+Collects information from open websites on its own, for free. When it cannot, it says so instead of making something up.
 
 [Русский](README.ru.md) · [中文](README.zh.md)
 
@@ -10,9 +10,11 @@ Collect public web evidence for zero monetary cost, or stop with an honest reaso
 
 <!-- owner-welcome:start -->
 
-> I built Lynceuz because a scraper that quietly changes the route, spends money, or invents a result is worse than no result. I wanted a small tool that stays on public ground and leaves evidence another person can verify.
+> I kept needing a lot of information on my own queries. Not one page, hundreds. By hand that is days of work. The services that do it for you charge money, and they never show you where the text came from.
 >
-> It gives you the bytes it actually reached, a manifest, and a hash. When access is denied or the safe routes run out, it says so and stops.
+> I wanted something that would gather it by itself, spend nothing, and leave a trail: here is the address, here is the time, here is the fingerprint of the file. So a month later you can check instead of taking somebody's word.
+>
+> Built it. It works.
 >
 > — Filipp Zarubin
 
@@ -35,17 +37,19 @@ Collect public web evidence for zero monetary cost, or stop with an honest reaso
 
 ## What This Is
 
-Lynceuz is a command-line tool that fetches public web pages and writes down what it did. You give it a URL. It picks a free route, saves the content, and saves a manifest next to it holding the address, the time, a SHA-256 and the cost. Lynceus was the Argo's lookout, the one who could see through earth and water and report exactly what he saw.
+Lynceuz is a command-line program. You give it an address, it brings back the page and saves a small card beside it: where it came from, when, and a fingerprint of the file. The fingerprint is there so you can later prove nobody swapped the text. The name comes from Lynceus, the lookout on the Argo, who could see through earth and water and reported exactly what he saw.
 
 ## Why It Helps
 
-Most scrapers are hard to trust twice. They fall back to something paid, or they hand you a page and no way to tell where it came from. Lynceuz keeps the receipt. A month later you can still show which engine answered, at what hour, and prove the bytes have not changed.
+Collecting by hand is slow. Paid services charge you and hand back a page with nothing attached: where it came from, at what hour, whether it is still the same text. Nothing to check.
+
+Lynceuz keeps the receipt for every run. A month later you can show which route answered and when, and prove the page has not changed.
 
 ## The Main Advantage
 
-**Main advantage:** a refusal you can read, instead of a result you cannot check.
+**Main advantage:** it invents nothing: it brings back what it actually reached, and says plainly what it could not.
 
-**Why this is better:** When a door is shut, Lynceuz names the door. It does not pad the gap with a guess, and it does not reach for a paid route to make the number look better. That is the whole trade: fewer results, and every one of them defensible.
+**Why this is better:** When a door is shut, Lynceuz names the door. It does not fill the gap with a guess, and it does not reach for a paid workaround to make the report look better. The trade is honest: fewer results, and every one of them you can stand behind.
 
 ## How It Works
 
@@ -120,16 +124,16 @@ Prefer not to clone? `npx github:zarubinvibe/lynceuz health` runs it straight fr
 
 Never done this before? [The onboarding](docs/ONBOARDING.md) walks the whole first run step by step and says what you see after every command.
 
-**You get:** a health table showing which engines are open, and your first saved manifest.
+**You get:** a table showing which routes are open and which are closed, and your first saved result card.
 
 ## Simple Comparison
 
 | Choice | Best when | What you get | Trade-off |
 |---|---|---|---|
-| Lynceuz | You need proof the fetch happened the way you say | Content, manifest, hash, cost, and every route it tried | Fewer pages: closed doors stay closed |
-| A paid scraping API | You need many pages fast and the bill is fine | High volume and someone else's proxies | A monthly cost, and their word for where the bytes came from |
-| A browser automation script you wrote | The job is one site you know well | Full control of the page | You maintain it, and it usually keeps no evidence |
-| Copy and paste by hand | One page, one time | Exactly what you saw | Nothing to re-check later, and it does not scale |
+| Lynceuz | You need many pages, and later you will have to show where they came from | The content, a card with the source and a fingerprint, and every route it tried | Fewer pages: closed doors stay closed |
+| A paid collection service | You need a great many pages fast and the bill is fine | Volume and somebody else’s access channels | A monthly charge, and their word for where the text came from |
+| A script you wrote yourself | The job is one site you know well | Full control of the page | You maintain it, and it usually leaves no trail |
+| Copying by hand | One page, one time | Exactly what you saw | Nothing to re-check later, and it falls apart at a hundred pages |
 
 ## Simple Words
 

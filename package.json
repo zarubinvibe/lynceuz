@@ -2,7 +2,7 @@
   "name": "lynceuz",
   "version": "0.1.0",
   "private": true,
-  "description": "Local-first CLI that collects public web evidence at zero cost, or stops with an honest reason.",
+  "description": "Collects information from open websites on its own and for free, and shows where every page came from.",
   "type": "module",
   "bin": {
     "lynceuz": "src/lynceuz.mjs"

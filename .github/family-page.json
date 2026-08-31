@@ -40,7 +40,7 @@
       },
       "ru": {
         "short": "Бесплатные пути пробуются по порядку, от самого дешевого.",
-        "body": "Сначала обычный запрос. Если страницу рисует JavaScript, Линкей ищет двери, которые сайт оставил открытыми: карту сайта из `robots.txt`, сами страницы документов, ленту RSS, версию для печати. Каждая ступень записывается — и удачная, и пустая.",
+        "body": "Сначала обычный запрос. Если страницу рисует JavaScript, Линкей ищет двери, которые сайт оставил открытыми: карту сайта из `robots.txt`, сами страницы документов, ленту RSS, версию для печати. Каждая ступень записывается - и удачная, и пустая.",
         "result": "содержимое с той ступени, которая действительно ответила.",
         "alt": "Лестница из открытых мраморных дверей, каждая шире предыдущей"
       },
@@ -59,8 +59,8 @@
         "alt": "A lantern behind glass, its light contained to one narrow beam"
       },
       "ru": {
-        "short": "Браузер открывается, только если человеческий путь — единственный.",
-        "body": "Большинству страниц он не нужен. Когда сайт отвечает лишь так, как отвечает человеку, браузер идет от отдельного непривилегированного пользователя, чей исходящий трафик режет правило пакетного фильтра — кроме одного порта на петле. Канарейка проверяет это правило до загрузки страницы.",
+        "short": "Браузер открывается, только если человеческий путь - единственный.",
+        "body": "Большинству страниц он не нужен. Когда сайт отвечает лишь так, как отвечает человеку, браузер идет от отдельного непривилегированного пользователя, чей исходящий трафик режет правило пакетного фильтра - кроме одного порта на петле. Канарейка проверяет это правило до загрузки страницы.",
         "result": "отрисованная страница или закрытая дверь с указанием правила.",
         "alt": "Фонарь за стеклом, свет которого сведен в один узкий луч"
       },
@@ -80,7 +80,7 @@
       },
       "ru": {
         "short": "После каждого запуска остается то, что можно перепроверить.",
-        "body": "Линкей кладет рядом полученные байты и манифест: движок-победитель, все пройденные ступени, адрес, время, SHA-256 содержимого, стоимость и предупреждения. В строке стоимости стоит ноль, потому что бюджет — ноль.",
+        "body": "Линкей кладет рядом полученные байты и манифест: движок-победитель, все пройденные ступени, адрес, время, SHA-256 содержимого, стоимость и предупреждения. В строке стоимости стоит ноль, потому что бюджет - ноль.",
         "result": "артефакт и манифест, которые можно отдать другому человеку.",
         "alt": "Запечатанная табличка с высеченным хэшем рядом со свитком"
       },
@@ -116,41 +116,41 @@
     "en": {
       "name": "Lynceuz",
       "title": "Lynceuz",
-      "tagline": "Collect public web evidence for zero monetary cost, or stop with an honest reason.",
+      "tagline": "Collects information from open websites on its own, for free. When it cannot, it says so instead of making something up.",
       "hero_alt": "Lynceus the lookout beside a white marble column, watching a bright ivory horizon",
-      "welcome": "I built Lynceuz because a scraper that quietly changes the route, spends money, or invents a result is worse than no result. I wanted a small tool that stays on public ground and leaves evidence another person can verify.\n\nIt gives you the bytes it actually reached, a manifest, and a hash. When access is denied or the safe routes run out, it says so and stops.",
-      "what": "Lynceuz is a command-line tool that fetches public web pages and writes down what it did. You give it a URL. It picks a free route, saves the content, and saves a manifest next to it holding the address, the time, a SHA-256 and the cost. Lynceus was the Argo's lookout, the one who could see through earth and water and report exactly what he saw.",
-      "why": "Most scrapers are hard to trust twice. They fall back to something paid, or they hand you a page and no way to tell where it came from. Lynceuz keeps the receipt. A month later you can still show which engine answered, at what hour, and prove the bytes have not changed.",
-      "advantage": "a refusal you can read, instead of a result you cannot check.",
-      "better": "When a door is shut, Lynceuz names the door. It does not pad the gap with a guess, and it does not reach for a paid route to make the number look better. That is the whole trade: fewer results, and every one of them defensible.",
+      "welcome": "I kept needing a lot of information on my own queries. Not one page, hundreds. By hand that is days of work. The services that do it for you charge money, and they never show you where the text came from.\n\nI wanted something that would gather it by itself, spend nothing, and leave a trail: here is the address, here is the time, here is the fingerprint of the file. So a month later you can check instead of taking somebody's word.\n\nBuilt it. It works.",
+      "what": "Lynceuz is a command-line program. You give it an address, it brings back the page and saves a small card beside it: where it came from, when, and a fingerprint of the file. The fingerprint is there so you can later prove nobody swapped the text. The name comes from Lynceus, the lookout on the Argo, who could see through earth and water and reported exactly what he saw.",
+      "why": "Collecting by hand is slow. Paid services charge you and hand back a page with nothing attached: where it came from, at what hour, whether it is still the same text. Nothing to check.\n\nLynceuz keeps the receipt for every run. A month later you can show which route answered and when, and prove the page has not changed.",
+      "advantage": "it invents nothing: it brings back what it actually reached, and says plainly what it could not.",
+      "better": "When a door is shut, Lynceuz names the door. It does not fill the gap with a guess, and it does not reach for a paid workaround to make the report look better. The trade is honest: fewer results, and every one of them you can stand behind.",
       "how": "Five steps, always in this order. Each one either hands the work to the next or stops with a reason.",
       "quick_intro": "Node 20 or newer is the only thing you need. Nothing is downloaded on install, because there is nothing to download.",
       "quick_extra": "Prefer not to clone? `npx github:zarubinvibe/lynceuz health` runs it straight from GitHub, and the [ZIP archive](https://github.com/zarubinvibe/lynceuz/archive/refs/heads/main.zip) works offline once it is unpacked. First install of any kind goes easier as a conversation: run `/lynceuz-setup` in Claude Code and it walks you through, asking before it touches anything.",
-      "quick_result": "a health table showing which engines are open, and your first saved manifest.",
+      "quick_result": "a table showing which routes are open and which are closed, and your first saved result card.",
       "compare": [
         [
           "Lynceuz",
-          "You need proof the fetch happened the way you say",
-          "Content, manifest, hash, cost, and every route it tried",
+          "You need many pages, and later you will have to show where they came from",
+          "The content, a card with the source and a fingerprint, and every route it tried",
           "Fewer pages: closed doors stay closed"
         ],
         [
-          "A paid scraping API",
-          "You need many pages fast and the bill is fine",
-          "High volume and someone else's proxies",
-          "A monthly cost, and their word for where the bytes came from"
+          "A paid collection service",
+          "You need a great many pages fast and the bill is fine",
+          "Volume and somebody else’s access channels",
+          "A monthly charge, and their word for where the text came from"
         ],
         [
-          "A browser automation script you wrote",
+          "A script you wrote yourself",
           "The job is one site you know well",
           "Full control of the page",
-          "You maintain it, and it usually keeps no evidence"
+          "You maintain it, and it usually leaves no trail"
         ],
         [
-          "Copy and paste by hand",
+          "Copying by hand",
           "One page, one time",
           "Exactly what you saw",
-          "Nothing to re-check later, and it does not scale"
+          "Nothing to re-check later, and it falls apart at a hundred pages"
         ]
       ],
       "glossary": [
@@ -193,41 +193,41 @@
     "ru": {
       "name": "Линкей",
       "title": "Линкей",
-      "tagline": "Собирает доказательства из открытого веба за ноль рублей или честно останавливается с причиной.",
+      "tagline": "Собирает информацию с открытых сайтов сам и бесплатно. Не смог - скажет прямо, а не придумает.",
       "hero_alt": "Впередсмотрящий Линкей у белой мраморной колонны смотрит на светлый горизонт",
-      "welcome": "Я сделал Lynceuz, потому что сборщик, который незаметно меняет маршрут, тратит деньги или выдумывает результат, хуже, чем отсутствие результата. Мне нужен был небольшой инструмент, который держится открытой территории и оставляет улику, проверяемую другим человеком.\n\nОн отдает те байты, до которых действительно добрался, манифест и хэш. Когда доступ закрыт или безопасные пути кончились, он говорит это и останавливается.",
-      "what": "Lynceuz — консольный инструмент: забирает публичные страницы и записывает, что именно сделал. Вы даете адрес. Он выбирает бесплатный путь, сохраняет содержимое и кладет рядом манифест с адресом, временем, SHA-256 и стоимостью. Линкей был впередсмотрящим «Арго» — тем, кто видел сквозь землю и воду и докладывал ровно то, что видел.",
-      "why": "Большинству сборщиков трудно поверить дважды. Они срываются на платное или отдают страницу без единого способа понять, откуда она. Линкей хранит квитанцию. Через месяц вы все еще покажете, какой движок ответил и в котором часу, и докажете, что байты не менялись.",
-      "advantage": "отказ, который можно прочитать, вместо результата, который нельзя проверить.",
-      "better": "Если дверь закрыта, Линкей называет дверь. Он не затыкает дыру догадкой и не тянется к платному пути, чтобы цифра выглядела приличнее. В этом весь размен: результатов меньше, зато за каждый можно ответить.",
+      "welcome": "Мне постоянно нужно было много информации по своим запросам. Не одна страница, а сотни. Руками это дни работы. Сервисы, которые делают это за тебя, берут деньги и не показывают, откуда взяли текст.\n\nЯ хотел инструмент, который соберет все сам, не потратит ни рубля и оставит след: вот адрес, вот время, вот отпечаток файла. Чтобы через месяц можно было проверить, а не поверить на слово.\n\nСделал. Работает.",
+      "what": "Lynceuz - программа для командной строки. Вы даете ей адрес, она приносит страницу и кладет рядом карточку: откуда взяла, когда и отпечаток файла. Отпечаток нужен, чтобы позже доказать, что текст не подменили. Имя от Линкея, впередсмотрящего с «Арго»: он видел сквозь землю и воду и докладывал ровно то, что видел.",
+      "why": "Собирать руками долго. Платные сервисы берут деньги и отдают страницу без источника: где взяли, в котором часу, тот ли это текст. Проверить нечем.\n\nЛинкей хранит квитанцию на каждый заход. Через месяц вы покажете, каким путем пришла эта страница и когда, и докажете, что она с тех пор не менялась.",
+      "advantage": "он ничего не выдумывает: приносит то, до чего добрался, а про остальное говорит прямо.",
+      "better": "Дверь закрыта - Линкей называет дверь. Он не затыкает дыру догадкой и не лезет в платный обход, чтобы отчет выглядел приличнее. Размен честный: результатов меньше, зато за каждый можно ответить.",
       "how": "Пять шагов, всегда в этом порядке. Каждый либо передает работу дальше, либо останавливается с причиной.",
       "quick_intro": "Нужен только Node 20 или новее. При установке ничего не качается, потому что качать нечего.",
-      "quick_extra": "Не хотите клонировать? `npx github:zarubinvibe/lynceuz health` запускает прямо из GitHub, а [ZIP-архив](https://github.com/zarubinvibe/lynceuz/archive/refs/heads/main.zip) работает и без сети, когда распакован. Любая первая установка идет легче разговором: наберите `/lynceuz-setup` в Claude Code — он проведет по шагам и спросит до того, как что-то тронет.",
-      "quick_result": "таблица здоровья с открытыми и закрытыми движками и ваш первый сохраненный манифест.",
+      "quick_extra": "Не хотите клонировать? `npx github:zarubinvibe/lynceuz health` запускает прямо из GitHub, а [ZIP-архив](https://github.com/zarubinvibe/lynceuz/archive/refs/heads/main.zip) работает и без сети, когда распакован. Любая первая установка идет легче разговором: наберите `/lynceuz-setup` в Claude Code - он проведет по шагам и спросит до того, как что-то тронет.",
+      "quick_result": "таблица: какие пути сейчас открыты, а какие закрыты. И первая сохраненная карточка результата.",
       "compare": [
         [
           "Линкей",
-          "Нужно доказать, что запрос прошел именно так",
-          "Содержимое, манифест, хэш, стоимость и все пройденные пути",
+          "Нужно много страниц, и потом придется доказывать, откуда они",
+          "Содержимое, карточка с источником и отпечатком, и все пройденные пути",
           "Страниц меньше: закрытые двери остаются закрытыми"
         ],
         [
-          "Платный scraping-API",
-          "Нужно много страниц быстро и счет не пугает",
-          "Объем и чужие прокси",
-          "Ежемесячная плата и их слово о том, откуда байты"
+          "Платный сервис сбора",
+          "Нужно очень много страниц быстро, и счет не пугает",
+          "Объем и чужие каналы доступа",
+          "Ежемесячная плата, а про источник придется верить на слово"
         ],
         [
-          "Свой скрипт на автоматизации браузера",
-          "Задача — один хорошо знакомый сайт",
+          "Свой скрипт",
+          "Задача - один хорошо знакомый сайт",
           "Полный контроль над страницей",
-          "Чинить его вам, и улик он обычно не оставляет"
+          "Чинить его вам, и следов он обычно не оставляет"
         ],
         [
           "Копировать руками",
           "Одна страница, один раз",
           "Ровно то, что видели",
-          "Перепроверить потом нечем, и это не масштабируется"
+          "Перепроверить потом нечем, и на сотне страниц это не работает"
         ]
       ],
       "glossary": [
@@ -237,7 +237,7 @@
         ],
         [
           "SHA-256",
-          "Отпечаток файла: изменился байт — изменился отпечаток"
+          "Отпечаток файла: изменился байт - изменился отпечаток"
         ],
         [
           "robots.txt",
@@ -251,7 +251,7 @@
       "safety": [
         "Только публичные цели. Loopback, частные диапазоны и адреса метаданных облака отбиваются, вместе с редиректами туда.",
         "`robots.txt` читается целиком. `Disallow` не обходится ничем, в том числе браузером.",
-        "Чужая поисковая выдача не скрапится. Google, Bing и подобные — вне игры.",
+        "Чужая поисковая выдача не скрапится. Google, Bing и подобные - вне игры.",
         "Денежный бюджет равен нулю, и ни один флаг не открывает платный путь тихо.",
         "Никакой телеметрии. О ваших запусках не уходит ничего.",
         "Браузерный путь идет от отдельного непривилегированного пользователя, чей исходящий трафик режется пакетным фильтром."
@@ -270,41 +270,41 @@
     "zh": {
       "name": "Lynceuz",
       "title": "Lynceuz",
-      "tagline": "以零金钱成本收集公开网页证据，或者给出诚实的理由并停下。",
+      "tagline": "自动、免费地从公开网站收集信息。做不到的时候，它会直说，而不是编一个出来。",
       "hero_alt": "瞭望者林叩斯站在白色大理石柱旁，望向明亮的象牙色地平线",
-      "welcome": "我做 Lynceuz，是因为一个悄悄换路线、悄悄花钱、或者干脆编出结果的抓取工具，比没有结果更糟。我想要一个小工具，它待在公开的地面上，并留下别人可以核验的证据。\n\n它交给你的是它真正取到的字节、一份清单和一个哈希。当访问被拒绝，或者安全的路都走完了，它会直说并停下。",
-      "what": "Lynceuz 是一个命令行工具：抓取公开网页，并把自己做过的事记下来。你给它一个网址。它挑一条免费路径，保存内容，并在旁边保存一份清单，里面有网址、时间、SHA-256 和花费。林叩斯是阿尔戈号的瞭望者，能看穿大地与海水，并如实报告他看见的东西。",
-      "why": "大多数抓取工具很难被信任第二次。它们要么退回到付费方案，要么把页面丢给你，却没有任何办法判断它从哪儿来。Lynceuz 把凭据留着。一个月后你依然能说清是哪个引擎回应的、在几点，并证明那些字节没有变过。",
-      "advantage": "一个读得懂的拒绝，而不是一个无法核验的结果。",
-      "better": "门关着的时候，Lynceuz 会指出是哪扇门。它不用猜测去填补空缺，也不会伸手去够付费路径，好让数字看着体面一些。这就是全部的取舍：结果更少，但每一个都站得住。",
+      "welcome": "我常常需要大量和自己问题相关的信息。不是一页，是几百页。用手一页页找，要花好几天。那些替你做这件事的服务要收钱，而且从不告诉你文字是从哪儿来的。\n\n我想要一个能自己去收集的东西：不花一分钱，还留下痕迹——网址在这里，时间在这里，文件的指纹在这里。这样一个月之后你可以自己核对，而不是听别人说。\n\n做出来了。能用。",
+      "what": "Lynceuz 是一个命令行程序。你给它一个网址，它把页面取回来，并在旁边存一张小卡片：从哪儿来的、什么时候取的、文件的指纹是什么。指纹的用处是：以后你能证明这段文字没有被人换过。名字来自阿尔戈号的瞭望者林叩斯，他能看穿大地与海水，并如实报告他看见的东西。",
+      "why": "用手收集很慢。付费服务收你的钱，交回一个页面，却什么都不附上：从哪儿来的、几点取的、现在还是不是同一段文字。没有可核对的东西。\n\nLynceuz 每跑一次都留下凭据。一个月之后，你能说清是哪条路径给出的回应、在什么时候，并证明这个页面此后没有变过。",
+      "advantage": "它什么都不编：取到什么就交什么，取不到的地方直说。",
+      "better": "门关着的时候，Lynceuz 会指出是哪扇门。它不用猜测去填补空缺，也不会绕到付费的路子上，好让报告看起来体面一点。这个取舍很实在：结果更少，但每一个你都担得起。",
       "how": "五个步骤，顺序固定。每一步要么把工作交给下一步，要么带着原因停下。",
       "quick_intro": "你只需要 Node 20 或更新的版本。安装时不会下载任何东西，因为本来就没有可下载的。",
       "quick_extra": "不想 clone？`npx github:zarubinvibe/lynceuz health` 可以直接从 GitHub 运行，[ZIP 压缩包](https://github.com/zarubinvibe/lynceuz/archive/refs/heads/main.zip)解压后离线也能用。任何一次首装，用对话的方式都更顺：在 Claude Code 里运行 `/lynceuz-setup`，它会一步步带着你走，动手之前先问你。",
-      "quick_result": "一张健康表，显示哪些引擎开着，以及你的第一份清单。",
+      "quick_result": "一张表，显示哪些路径现在开着、哪些关着，以及你的第一张结果卡片。",
       "compare": [
         [
           "Lynceuz",
-          "你需要证明这次抓取确实照你说的方式发生",
-          "内容、清单、哈希、花费，以及试过的每一条路",
+          "你需要很多页面，而且之后要说清它们从哪儿来",
+          "内容、一张写明来源和指纹的卡片，以及试过的每一条路",
           "页面更少：关着的门就是关着的"
         ],
         [
-          "付费抓取 API",
-          "你要快速拿到大量页面，账单不成问题",
-          "高吞吐量和别人的代理",
-          "每月费用，以及字节来源只能听他们说"
+          "付费收集服务",
+          "你要很快拿到大量页面，账单不成问题",
+          "规模，以及别人的访问通道",
+          "每月要付费，来源只能听他们说"
         ],
         [
-          "自己写的浏览器自动化脚本",
+          "自己写的脚本",
           "任务只针对一个你很熟的站点",
           "对页面的完全控制",
-          "维护归你，而且通常不留证据"
+          "维护归你，而且通常不留痕迹"
         ],
         [
           "人工复制粘贴",
           "一个页面，只做一次",
           "你看见的就是那样",
-          "事后无从复核，也没法扩大规模"
+          "事后无从核对，到一百页就撑不住了"
         ]
       ],
       "glossary": [
