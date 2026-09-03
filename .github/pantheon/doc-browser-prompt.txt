@@ -1,0 +1,19 @@
+Use case: stylized-concept
+Asset type: section frame for the containment-proof page of a project of the Olympuz family
+Primary request: one wide frame that shows the browser working inside a closed box.
+Input images: Image 1 is the immutable Pantheon style reference; Image 2 is the required family-signature column; Image 3 is the approved character sheet of this project and fixes the figure exactly; Image 4 is the approved prop sheet and fixes every object exactly. Use the SAME table, the SAME address stone, the SAME ladder, the SAME glass pane, the SAME bolted door, the SAME evidence tablet, the SAME sealed chest that appear on the prop sheet. Nothing is redesigned.
+Subject: the flat glass pane in its thin muted-gold frame stands upright on the marble table in the middle of the frame, its foot fully on the table top. A low marble wall of four short blank slabs stands on the table around the glass pane on three sides, so the pane is plainly enclosed. One sky-blue stream arrives along the table top from the left and ends at the outer face of the enclosing wall without entering it; a second, shorter sky-blue stream runs inside the enclosure from the pane to the sealed marble chest standing closed on the table beside it. No figure, no hands.
+Composition/framing: 16:9 landscape. A classical white-marble column stands at the far right, behind the end of the table. Generous empty ivory space, everything fully inside the frame, nothing overlapping, nothing cropped.
+Style/medium: premium restrained 3D marble render, monumental carving with a real cornice profile and visible thickness, physically plausible materials, warm ivory Apple-like presentation, museum plate feeling
+Lighting/mood: soft daylight from upper left, long gentle shadows, controlled, sealed, deliberate. The gold seals, the bolt and the blue streams glow softly FROM WITHIN, as if lit by their own material; nothing is lit by a lamp, a neon tube or a hard rim light, and no surface is left flat and dead.
+Color palette: ivory #F3EFE8, bright ivory #FBFAF6, white marble, muted gold #C9A87A for seals, bolt and metal fittings only, sky blue #B8D6EA for streams only, charcoal #3E3A36
+Constraints:
+- Every object RESTS ON A SURFACE with its full base touching it and casting its own soft shadow. Nothing hovers, nothing balances on a point or an edge.
+- Marble is carved stone with visible thickness and a soft grain, never a flat gradient, never plastic, never metal.
+- Blue streams lie flat along the surface they run on and never rise into the air.
+- The enclosing slabs stand upright on the table with their full bases touching it, and their faces are completely blank.
+- The arriving stream stops at the outside of the enclosure; it does not cross the wall.
+- No figure, no person, no hands anywhere.
+- Preserve the reference style; highest final quality; maximum resolution.
+Avoid: floating objects, objects balancing on a point, a second table of a different shape, a redesigned chest or seal, an open door, a broken seal, blindfold, closed eyes, scales, sword, owl, helmet, hearth fire, dark background, black background, neon, purple gradient, smoky cinema lighting, heavy bronze, metallic or plastic marble, watermark, callout labels, charts, arrows made of text
+Text (verbatim): No readable text, no letters, no digits, no measurement marks, no callout labels anywhere in the image.

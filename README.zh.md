@@ -57,15 +57,7 @@ Lynceuz 每跑一次都留下凭据。一个月之后，你能说清是哪条路
 
 <!-- workflow-diagram:start -->
 
-```text
-  ┌────────┐   ┌────────┐   ┌────────┐
-  │ 地址   │ ▶ │ 阶梯   │ ▶ │ 浏览器 │
-  └────────┘   └────────┘   └────────┘
-       ▼
-  ┌────────┐   ┌────────┐
-  │ 证据   │ ▶ │ 停下   │
-  └────────┘   └────────┘
-```
+<p align="center"><img src="docs/assets/pantheon/takt-zh.png" alt="五块大理石板排成一行，每块刻着运行中的一步，一条蓝色水流把它们串起来，最后汇入封好印的证据箱" width="100%"></p>
 
 <!-- workflow-diagram:end -->
 
@@ -112,12 +104,22 @@ Lynceuz 会把收到的字节和一份 JSON 清单一起写下来：胜出的引
 你只需要 Node 20 或更新的版本。安装时不会下载任何东西，因为本来就没有可下载的。
 
 ```bash
-node --version
+# без установки, прямо из GitHub:
+npx github:zarubinvibe/lynceuz health
+
+# или забрать себе:
 git clone https://github.com/zarubinvibe/lynceuz.git
 cd lynceuz
 node scripts/onboard.mjs
-node src/lynceuz.mjs health
-node src/lynceuz.mjs url 'https://example.org/' --json
+
+# без git, одним архивом:
+curl -L https://github.com/zarubinvibe/lynceuz/archive/refs/heads/main.zip -o lynceuz.zip
+
+# дальше открывайте, чем привычнее:
+claude          # Claude Code: скажите /lynceuz-setup, установка пройдет разговором
+codex           # Codex CLI: те же правила уже лежат внутри проекта
+code .          # VS Code: агент открывается внутри редактора
+node src/lynceuz.mjs url 'https://example.org/' --json   # обычный терминал, без агента
 ```
 
 不想 clone？`npx github:zarubinvibe/lynceuz health` 可以直接从 GitHub 运行，[ZIP 压缩包](https://github.com/zarubinvibe/lynceuz/archive/refs/heads/main.zip)解压后离线也能用。任何一次首装，用对话的方式都更顺：在 Claude Code 里运行 `/lynceuz-setup`，它会一步步带着你走，动手之前先问你。
@@ -128,12 +130,17 @@ node src/lynceuz.mjs url 'https://example.org/' --json
 
 ## 简单对比
 
-| 方案 | 适合什么时候 | 你会得到 | 代价 |
-|---|---|---|---|
-| Lynceuz | 你需要很多页面，而且之后要说清它们从哪儿来 | 内容、一张写明来源和指纹的卡片，以及试过的每一条路 | 页面更少：关着的门就是关着的 |
-| 付费收集服务 | 你要很快拿到大量页面，账单不成问题 | 规模，以及别人的访问通道 | 每月要付费，来源只能听他们说 |
-| 自己写的脚本 | 任务只针对一个你很熟的站点 | 对页面的完全控制 | 维护归你，而且通常不留痕迹 |
-| 人工复制粘贴 | 一个页面，只做一次 | 你看见的就是那样 | 事后无从核对，到一百页就撑不住了 |
+| 方案 | 这是什么 | 在哪里运行 | 带指纹的来源卡 | 会不会闯关着的门 | 诚实拒绝 | 价格 |
+|---|---|---|---|---|---|---|
+| **Lynceuz** | 从公开网页收集证据的命令行工具 | 在你自己的机器上 | 每一页都有 | 不闯，关着的门就让它关着 | 会，并说出理由 | 零 |
+| 纯手工复制 | 浏览器加剪贴板 | 在你的浏览器里 | 没有 | 不闯 | 你自己判断 | 你的时间 |
+| Firecrawl | 按量付费的页面采集 API | 在厂商云端 | 没有，只有内容 | 有时候，用它自己的通道 | 只给错误码，不给理由 | 订阅 |
+| Apify、ScrapeGraphAI | 带现成脚本的采集平台 | 在厂商云端 | 没有 | 经常，用它自己的通道 | 取决于脚本 | 订阅加用量 |
+| Playwright 或 Puppeteer | 你自己写的浏览器脚本 | 在你自己的机器上 | 自己写了才有 | 取决于你能坚持多久 | 你自己判断 | 你花在修脚本上的时间 |
+| curl 和 jq | 一个普通终端 | 在你自己的机器上 | 没有 | 不闯 | 一个状态码，仅此而已 | 零 |
+| Wayback Machine、archive.today | 公开的网页存档 | 在别人的服务器上 | 有快照日期，没有指纹 | 不闯 | 没有快照时就是空的 | 免费 |
+
+名称归各自所有者。这张表描述的是用途，不是实测：别人的产品会变，这个页面不替它们做承诺。
 
 ## 简单词汇
 
@@ -191,7 +198,7 @@ node src/lynceuz.mjs url 'https://example.org/' --json
 | 项目 | Athena | 可携带的智能体操作系统：在新的 Mac 上重建 Claude 与 Codex 的工作环境。 | [仓库](https://github.com/zarubinvibe/athena) · [ZIP](https://github.com/zarubinvibe/athena/archive/refs/heads/main.zip) |
 | 项目 | Helioz | 全天候的智能体工作传送带，带可验证的完成标记和按目标做出的夜间决策。 | [仓库](https://github.com/zarubinvibe/helioz) · [ZIP](https://github.com/zarubinvibe/helioz/archive/refs/heads/main.zip) |
 | 项目 | Mnemazine | 本地优先的记忆系统：把原始材料变成可复用的、已核验的知识。 | [仓库](https://github.com/zarubinvibe/mnemazine) · [ZIP](https://github.com/zarubinvibe/mnemazine/archive/refs/heads/main.zip) |
-| 项目 | Themis | 面向俄罗斯诉讼的多智能体助手，本地识别扫描件，五位法学家组成合议审阅。 | [仓库](https://github.com/zarubinvibe/themis) · [ZIP](https://github.com/zarubinvibe/themis/archive/refs/heads/main.zip) |
+| 项目 | Themiz | 面向俄罗斯诉讼的多智能体助手，本地识别扫描件，五位法学家组成合议审阅。 | [仓库](https://github.com/zarubinvibe/themiz) · [ZIP](https://github.com/zarubinvibe/themiz/archive/refs/heads/main.zip) |
 | 项目 | Zeuz | 工作流工厂：把一个想法变成带规则、闸门、可观测性和回放的多智能体系统。 | [仓库](https://github.com/zarubinvibe/zeuz) · [ZIP](https://github.com/zarubinvibe/zeuz/archive/refs/heads/main.zip) |
 | 项目 | Lynceuz | 以零成本收集公开网页证据；安全路径走完时，它会给出诚实的理由并停下。 | [仓库](https://github.com/zarubinvibe/lynceuz) · [ZIP](https://github.com/zarubinvibe/lynceuz/archive/refs/heads/main.zip) |
 <!-- pantheon-family:end -->

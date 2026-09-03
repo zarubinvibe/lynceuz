@@ -57,15 +57,7 @@ Five steps, always in this order. Each one either hands the work to the next or 
 
 <!-- workflow-diagram:start -->
 
-```text
-  ┌──────────┐   ┌──────────┐   ┌──────────┐
-  │ Address  │ ▶ │ Ladder   │ ▶ │ Browser  │
-  └──────────┘   └──────────┘   └──────────┘
-        ▼
-  ┌──────────┐   ┌──────────┐
-  │ Evidence │ ▶ │ Stop     │
-  └──────────┘   └──────────┘
-```
+<p align="center"><img src="docs/assets/pantheon/takt-en.png" alt="Five marble plates in one row, each engraved with one step of the run, linked by a blue stream that ends at the sealed evidence chest" width="100%"></p>
 
 <!-- workflow-diagram:end -->
 
@@ -112,12 +104,22 @@ A blocked run returns a typed refusal with the reason and the list of rungs alre
 Node 20 or newer is the only thing you need. Nothing is downloaded on install, because there is nothing to download.
 
 ```bash
-node --version
+# без установки, прямо из GitHub:
+npx github:zarubinvibe/lynceuz health
+
+# или забрать себе:
 git clone https://github.com/zarubinvibe/lynceuz.git
 cd lynceuz
 node scripts/onboard.mjs
-node src/lynceuz.mjs health
-node src/lynceuz.mjs url 'https://example.org/' --json
+
+# без git, одним архивом:
+curl -L https://github.com/zarubinvibe/lynceuz/archive/refs/heads/main.zip -o lynceuz.zip
+
+# дальше открывайте, чем привычнее:
+claude          # Claude Code: скажите /lynceuz-setup, установка пройдет разговором
+codex           # Codex CLI: те же правила уже лежат внутри проекта
+code .          # VS Code: агент открывается внутри редактора
+node src/lynceuz.mjs url 'https://example.org/' --json   # обычный терминал, без агента
 ```
 
 Prefer not to clone? `npx github:zarubinvibe/lynceuz health` runs it straight from GitHub, and the [ZIP archive](https://github.com/zarubinvibe/lynceuz/archive/refs/heads/main.zip) works offline once it is unpacked. First install of any kind goes easier as a conversation: run `/lynceuz-setup` in Claude Code and it walks you through, asking before it touches anything.
@@ -128,12 +130,17 @@ Never done this before? [The onboarding](docs/ONBOARDING.md) walks the whole fir
 
 ## Simple Comparison
 
-| Choice | Best when | What you get | Trade-off |
-|---|---|---|---|
-| Lynceuz | You need many pages, and later you will have to show where they came from | The content, a card with the source and a fingerprint, and every route it tried | Fewer pages: closed doors stay closed |
-| A paid collection service | You need a great many pages fast and the bill is fine | Volume and somebody else’s access channels | A monthly charge, and their word for where the text came from |
-| A script you wrote yourself | The job is one site you know well | Full control of the page | You maintain it, and it usually leaves no trail |
-| Copying by hand | One page, one time | Exactly what you saw | Nothing to re-check later, and it falls apart at a hundred pages |
+| Choice | What it is | Where it runs | Source card with a fingerprint | Goes through a closed door | Honest refusal | Price |
+|---|---|---|---|---|---|---|
+| **Lynceuz** | A CLI that collects evidence from the open web | On your own machine | Yes, for every page | No, a closed door stays closed | Yes, with the reason named | Zero |
+| Copying by hand | A browser and the clipboard | In your browser | No | No | You are the judge | Your hours |
+| Firecrawl | A paid page-collection API | In the vendor cloud | No, content only | Sometimes, through their channels | Returns an error, not a reason | Subscription |
+| Apify, ScrapeGraphAI | Scraping platforms with ready actors | In the vendor cloud | No | Often, through their channels | Depends on the actor | Subscription plus usage |
+| Playwright or Puppeteer | Your own browser script | On your own machine | Only if you write it | As far as your patience goes | You are the judge | Your time on repairs |
+| curl and jq | A plain terminal | On your own machine | No | No | A status code and nothing else | Zero |
+| Wayback Machine, archive.today | Public page archives | On someone else's server | A snapshot date, no fingerprint | No | Empty when there is no snapshot | Free |
+
+Names belong to their owners. The table describes purpose, not a benchmark: other products change, and this page makes no promises for them.
 
 ## Simple Words
 
@@ -191,7 +198,7 @@ This is one of the public [Olympuz projects](https://github.com/zarubinvibe/athe
 | project | Athena | Portable agent OS that restores a complete Claude and Codex setup on a new Mac. | [Repository](https://github.com/zarubinvibe/athena) · [ZIP](https://github.com/zarubinvibe/athena/archive/refs/heads/main.zip) |
 | project | Helioz | 24/7 agent work conveyor with verified completion markers and goal-based overnight decisions. | [Repository](https://github.com/zarubinvibe/helioz) · [ZIP](https://github.com/zarubinvibe/helioz/archive/refs/heads/main.zip) |
 | project | Mnemazine | Local-first memory system that turns raw inputs into verified reusable knowledge. | [Repository](https://github.com/zarubinvibe/mnemazine) · [ZIP](https://github.com/zarubinvibe/mnemazine/archive/refs/heads/main.zip) |
-| project | Themis | Multi-agent assistant for Russian litigation with local OCR and review by a five-jurist council. | [Repository](https://github.com/zarubinvibe/themis) · [ZIP](https://github.com/zarubinvibe/themis/archive/refs/heads/main.zip) |
+| project | Themiz | Multi-agent assistant for Russian litigation with local OCR and review by a five-jurist council. | [Repository](https://github.com/zarubinvibe/themiz) · [ZIP](https://github.com/zarubinvibe/themiz/archive/refs/heads/main.zip) |
 | project | Zeuz | Factory that turns an idea into a governed multi-agent workflow with gates, observability, and replay. | [Repository](https://github.com/zarubinvibe/zeuz) · [ZIP](https://github.com/zarubinvibe/zeuz/archive/refs/heads/main.zip) |
 | project | Lynceuz | Collects public web evidence at zero cost and stops with an honest reason when the safe routes end. | [Repository](https://github.com/zarubinvibe/lynceuz) · [ZIP](https://github.com/zarubinvibe/lynceuz/archive/refs/heads/main.zip) |
 <!-- pantheon-family:end -->

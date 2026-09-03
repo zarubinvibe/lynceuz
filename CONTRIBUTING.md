@@ -1,5 +1,7 @@
 # Contributing
 
+<p align="center"><img src="docs/assets/pantheon/doc-contributing.png" alt="A marble table with blank evidence tablets and a blue stream running from them into the sealed chest, with the free ladder standing beside the table" width="100%"></p>
+
 Thank you for looking. Lynceuz is small on purpose, so the bar for new code is
 mostly about evidence: a change should be provable, and it should not widen what
 the tool is allowed to reach.

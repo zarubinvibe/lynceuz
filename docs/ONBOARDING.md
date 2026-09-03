@@ -2,6 +2,8 @@
 
 # Onboarding — your first hour with Lynceuz
 
+<p align="center"><img src="assets/pantheon/doc-onboarding.png" alt="Lynceus the lookout shading his gaze beside the sealed evidence chest, with the free ladder and the blank address stone standing ready" width="100%"></p>
+
 This walks a first-time user from an empty folder to a proven fetch. You type a
 command, read what shows up, then move to the next step. Nothing here installs a
 package or touches system settings. If a step comes back red, stop there and fix

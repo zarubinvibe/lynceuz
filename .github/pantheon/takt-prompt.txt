@@ -1,0 +1,21 @@
+Use case: stylized-concept
+Asset type: workflow diagram frame for a project of the Olympuz family, labels are engraved later by a script
+Primary request: one wide frame holding five empty wide marble plates in one clear row, ready to be engraved.
+Input images: Image 1 is the immutable Pantheon style reference; Image 2 is the required family-signature column; Image 3 is the approved character sheet of this project and fixes the figure exactly; Image 4 is the approved prop sheet and fixes every object exactly. Use the SAME table, the SAME address stone, the SAME ladder, the SAME glass pane, the SAME bolted door, the SAME evidence tablet, the SAME sealed chest that appear on the prop sheet. Nothing is redesigned.
+Subject: five identical wide white-marble plates, each a horizontal rectangle about three units wide and two units tall, with a completely smooth blank front face and a carved cornice edge along the top. They stand in ONE straight horizontal row across the middle of the frame, evenly spaced, each resting on its own low marble base on the ground. One sky-blue stream runs along the ground beneath the whole row from the left edge to the right, touching the base of every plate in turn, and ends at the sealed marble evidence chest standing on the ground at the right end of the row. No figure, no hands.
+Composition/framing: 16:9 landscape. A classical white-marble column stands at the far right of the frame, behind the chest and clearly separated from the row. Generous empty ivory space, everything fully inside the frame, nothing overlapping, nothing cropped.
+Style/medium: premium restrained 3D marble render, monumental carving with a real cornice profile and visible thickness, physically plausible materials, warm ivory Apple-like presentation, museum plate feeling
+Lighting/mood: soft daylight from upper left, long gentle shadows, orderly, architectural, patient. The gold seals, the bolt and the blue streams glow softly FROM WITHIN, as if lit by their own material; nothing is lit by a lamp, a neon tube or a hard rim light, and no surface is left flat and dead.
+Color palette: ivory #F3EFE8, bright ivory #FBFAF6, white marble, muted gold #C9A87A for seals, bolt and metal fittings only, sky blue #B8D6EA for streams only, charcoal #3E3A36
+Constraints:
+- Every object RESTS ON A SURFACE with its full base touching it and casting its own soft shadow. Nothing hovers, nothing balances on a point or an edge.
+- Marble is carved stone with visible thickness and a soft grain, never a flat gradient, never plastic, never metal.
+- Blue streams lie flat along the surface they run on and never rise into the air.
+- The five plates are IDENTICAL in size and shape and stand at the same height in one straight line, with equal gaps.
+- Each plate is WIDER THAN IT IS TALL, so a short word fits across its face in one line, and each plate face is turned squarely towards the camera.
+- Every plate face is COMPLETELY BLANK: no carving, no ornament, no marks, no letters, no digits, nothing at all.
+- This frame contains ONLY the five plates, the sealed chest and the family column. There is no table, no ladder, no door, no glass pane, no second chest and no row of sample objects anywhere.
+- No figure, no person, no hands anywhere.
+- Preserve the reference style; highest final quality; maximum resolution.
+Avoid: floating objects, objects balancing on a point, a second table of a different shape, a redesigned chest or seal, an open door, a broken seal, blindfold, closed eyes, scales, sword, owl, helmet, hearth fire, dark background, black background, neon, purple gradient, smoky cinema lighting, heavy bronze, metallic or plastic marble, watermark, callout labels, charts, arrows made of text
+Text (verbatim): No readable text, no letters, no digits, no measurement marks, no callout labels anywhere in the image.

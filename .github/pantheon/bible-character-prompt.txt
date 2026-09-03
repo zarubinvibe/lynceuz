@@ -1,0 +1,23 @@
+Use case: stylized-concept
+Asset type: character reference sheet for a project of the Olympuz family, binding for every later frame
+Primary request: one wide sheet that fixes the figure of Lynceus exactly as he appears in Image 3, so he can be reproduced identically in every later scene.
+Input images: Image 1 is the immutable Pantheon style reference; Image 2 is the required family-signature column; Image 3 is the approved rendering of this exact character - match his face, hair, body, the drape of the himation and above all the raised hand shading his brow. He is a large, finely carved monumental marble figure with real weight and deep drapery folds, not a small smooth figurine.
+Subject: Lynceus as a white-marble sculpture, shown four times in one row at the same height and the same scale: front view, three-quarter view turned to his left, full profile facing left, and back view. Beside the row, four larger attribute studies: the head alone in three-quarter view with the shading hand raised, the sealed marble evidence chest alone, one flat marble evidence tablet alone, and one short marble ladder alone.
+Composition/framing: 16:9 landscape. A classical white-marble column stands at the far right as the family signature, clearly separated from the figures. The four views stand in one straight row across the middle of the frame with equal spacing, each fully inside the frame with clear space above the head and below the base. The four attribute studies sit in a lower band under the row. Generous empty ivory space, nothing overlapping, nothing cropped.
+Style/medium: premium restrained 3D marble sculpture render, monumental carving with deep drapery folds and visible thickness, physically plausible materials, warm ivory Apple-like presentation, museum plate feeling
+Lighting/mood: soft daylight from upper left, long gentle shadows, watchful and calm, identical lighting on every view. The gold seal and the blue stream glow softly FROM WITHIN, as if lit by their own material; nothing is lit by a lamp, a neon tube or a hard rim light, and no surface is left flat and dead.
+Color palette: ivory #F3EFE8, bright ivory #FBFAF6, white marble, muted gold #C9A87A for the seal only, sky blue #B8D6EA for the incoming stream only, charcoal #3E3A36
+Constraints, and these are the identity of the figure and must be identical in all four views:
+- His EYES ARE OPEN and keen, looking far into the distance. He wears NO blindfold and NO band of any kind across the eyes. Seeing is his whole nature: a covered or closed eye is the single worst error in this sheet.
+- His RIGHT HAND IS RAISED to his brow, palm down, shading his eyes as a lookout does. The hand touches the forehead. This gesture appears in the front, three-quarter and profile views; in the back view the raised arm is still visible from behind.
+- Short curled hair, no helmet, no hat, no veil, bare head.
+- A classical himation draped over his left shoulder and wrapped around the hips, leaving the right shoulder and chest bare, carved with deep folds and real thickness.
+- His left arm hangs relaxed at his side, fingers open and empty.
+- He stands barefoot on a round marble base whose full underside rests on the ground.
+- The sealed evidence chest STANDS ON THE GROUND beside his left foot, closed, with one round muted-gold seal on its front face. One sky-blue stream runs along the ground into the chest and ends at it. The chest never floats.
+- Every view shows the same person with the SAME drape: one himation over the left shoulder, wrapped in the same direction, the same length. The chest shown alone in the study below is the SAME OBJECT: same size, same seal. Nothing changes between views except the angle of the camera.
+- Anatomically correct hands with exactly five fingers, natural finger lengths and one clearly readable thumb, fingers not fused.
+- Nothing hovers, nothing balances on a point: everything standing rests on a surface and casts a shadow.
+- Preserve the reference style; highest final quality; maximum resolution.
+Avoid: blindfold, band over the eyes, closed eyes, helmet, hat, veil, scales, sword, owl, hearth fire, both hands lowered, a missing shading hand, a small smooth featureless figurine, a flat gradient block instead of carved marble, dark background, black background, neon, purple gradient, smoky cinema lighting, heavy bronze, metallic or plastic marble, watermark, extra or missing fingers, fused fingers, callout labels
+Text (verbatim): No readable text, no letters, no digits, no measurement marks, no callout labels anywhere in the image.

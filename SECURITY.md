@@ -1,5 +1,7 @@
 # Security and privacy
 
+<p align="center"><img src="docs/assets/pantheon/doc-security.png" alt="A bolted white marble door standing closed, three blue streams stopping at its foot, and the sealed evidence chest beside it" width="100%"></p>
+
 Lynceuz fetches public web pages and writes evidence to your disk. This page says
 exactly what it touches, what it refuses, and how to report a problem.
 

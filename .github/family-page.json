@@ -9,7 +9,7 @@
   ],
   "license_badge": "MIT",
   "status_badge": "v0.1%20early",
-  "quick_code": "node --version\ngit clone https://github.com/zarubinvibe/lynceuz.git\ncd lynceuz\nnode scripts/onboard.mjs\nnode src/lynceuz.mjs health\nnode src/lynceuz.mjs url 'https://example.org/' --json",
+  "quick_code": "# без установки, прямо из GitHub:\nnpx github:zarubinvibe/lynceuz health\n\n# или забрать себе:\ngit clone https://github.com/zarubinvibe/lynceuz.git\ncd lynceuz\nnode scripts/onboard.mjs\n\n# без git, одним архивом:\ncurl -L https://github.com/zarubinvibe/lynceuz/archive/refs/heads/main.zip -o lynceuz.zip\n\n# дальше открывайте, чем привычнее:\nclaude          # Claude Code: скажите /lynceuz-setup, установка пройдет разговором\ncodex           # Codex CLI: те же правила уже лежат внутри проекта\ncode .          # VS Code: агент открывается внутри редактора\nnode src/lynceuz.mjs url 'https://example.org/' --json   # обычный терминал, без агента\n",
   "stages": {
     "address": {
       "en": {
@@ -129,28 +129,67 @@
       "quick_result": "a table showing which routes are open and which are closed, and your first saved result card.",
       "compare": [
         [
-          "Lynceuz",
-          "You need many pages, and later you will have to show where they came from",
-          "The content, a card with the source and a fingerprint, and every route it tried",
-          "Fewer pages: closed doors stay closed"
-        ],
-        [
-          "A paid collection service",
-          "You need a great many pages fast and the bill is fine",
-          "Volume and somebody else’s access channels",
-          "A monthly charge, and their word for where the text came from"
-        ],
-        [
-          "A script you wrote yourself",
-          "The job is one site you know well",
-          "Full control of the page",
-          "You maintain it, and it usually leaves no trail"
+          "**Lynceuz**",
+          "A CLI that collects evidence from the open web",
+          "On your own machine",
+          "Yes, for every page",
+          "No, a closed door stays closed",
+          "Yes, with the reason named",
+          "Zero"
         ],
         [
           "Copying by hand",
-          "One page, one time",
-          "Exactly what you saw",
-          "Nothing to re-check later, and it falls apart at a hundred pages"
+          "A browser and the clipboard",
+          "In your browser",
+          "No",
+          "No",
+          "You are the judge",
+          "Your hours"
+        ],
+        [
+          "Firecrawl",
+          "A paid page-collection API",
+          "In the vendor cloud",
+          "No, content only",
+          "Sometimes, through their channels",
+          "Returns an error, not a reason",
+          "Subscription"
+        ],
+        [
+          "Apify, ScrapeGraphAI",
+          "Scraping platforms with ready actors",
+          "In the vendor cloud",
+          "No",
+          "Often, through their channels",
+          "Depends on the actor",
+          "Subscription plus usage"
+        ],
+        [
+          "Playwright or Puppeteer",
+          "Your own browser script",
+          "On your own machine",
+          "Only if you write it",
+          "As far as your patience goes",
+          "You are the judge",
+          "Your time on repairs"
+        ],
+        [
+          "curl and jq",
+          "A plain terminal",
+          "On your own machine",
+          "No",
+          "No",
+          "A status code and nothing else",
+          "Zero"
+        ],
+        [
+          "Wayback Machine, archive.today",
+          "Public page archives",
+          "On someone else's server",
+          "A snapshot date, no fingerprint",
+          "No",
+          "Empty when there is no snapshot",
+          "Free"
         ]
       ],
       "glossary": [
@@ -188,7 +227,17 @@
         "There is no hosted service and no account. It runs on your machine or not at all."
       ],
       "docs": "Deeper reading: [the onboarding](docs/ONBOARDING.md) for the first run, [the discovery ladder](docs/discovery-ladder.md) for how routes are ordered, [the access policy](docs/access-policy.md) for where the line is drawn, and [the containment proof](docs/wave2-containment-proof.md) for how the browser rule was measured.",
-      "license": "MIT. See [LICENSE](LICENSE)."
+      "license": "MIT. See [LICENSE](LICENSE).",
+      "compare_header": [
+        "Choice",
+        "What it is",
+        "Where it runs",
+        "Source card with a fingerprint",
+        "Goes through a closed door",
+        "Honest refusal",
+        "Price"
+      ],
+      "compare_note": "Names belong to their owners. The table describes purpose, not a benchmark: other products change, and this page makes no promises for them."
     },
     "ru": {
       "name": "Линкей",
@@ -206,28 +255,67 @@
       "quick_result": "таблица: какие пути сейчас открыты, а какие закрыты. И первая сохраненная карточка результата.",
       "compare": [
         [
-          "Линкей",
-          "Нужно много страниц, и потом придется доказывать, откуда они",
-          "Содержимое, карточка с источником и отпечатком, и все пройденные пути",
-          "Страниц меньше: закрытые двери остаются закрытыми"
-        ],
-        [
-          "Платный сервис сбора",
-          "Нужно очень много страниц быстро, и счет не пугает",
-          "Объем и чужие каналы доступа",
-          "Ежемесячная плата, а про источник придется верить на слово"
-        ],
-        [
-          "Свой скрипт",
-          "Задача - один хорошо знакомый сайт",
-          "Полный контроль над страницей",
-          "Чинить его вам, и следов он обычно не оставляет"
+          "**Линкей**",
+          "CLI сбора улик из открытого веба",
+          "На вашем компьютере",
+          "Да, у каждой страницы",
+          "Нет, закрытая дверь остается закрытой",
+          "Да, с названной причиной",
+          "Ноль"
         ],
         [
           "Копировать руками",
-          "Одна страница, один раз",
-          "Ровно то, что видели",
-          "Перепроверить потом нечем, и на сотне страниц это не работает"
+          "Браузер и буфер обмена",
+          "У вас в браузере",
+          "Нет",
+          "Нет",
+          "Вы сами",
+          "Ваши часы"
+        ],
+        [
+          "Firecrawl",
+          "Платный API сбора страниц",
+          "В облаке поставщика",
+          "Нет, только содержимое",
+          "Иногда, чужими каналами",
+          "Отдает ошибку, не причину",
+          "Подписка"
+        ],
+        [
+          "Apify, ScrapeGraphAI",
+          "Платформы скрапинга с готовыми акторами",
+          "В облаке поставщика",
+          "Нет",
+          "Часто, чужими каналами",
+          "Зависит от актора",
+          "Подписка плюс расход"
+        ],
+        [
+          "Playwright или Puppeteer",
+          "Свой браузерный скрипт",
+          "На вашем компьютере",
+          "Только если напишете сами",
+          "Насколько хватит упорства",
+          "Вы сами",
+          "Ваше время на починку"
+        ],
+        [
+          "curl и jq",
+          "Голый терминал",
+          "На вашем компьютере",
+          "Нет",
+          "Нет",
+          "Код ответа, и все",
+          "Ноль"
+        ],
+        [
+          "Wayback Machine, archive.today",
+          "Публичные архивы страниц",
+          "На чужом сервере",
+          "Дата снимка, без отпечатка",
+          "Нет",
+          "Пусто, если снимка нет",
+          "Бесплатно"
         ]
       ],
       "glossary": [
@@ -265,7 +353,17 @@
         "Ни размещенного сервиса, ни аккаунта. Работает на вашей машине или не работает вовсе."
       ],
       "docs": "Что почитать дальше: [онбординг](docs/ONBOARDING.ru.md) для первого запуска, [лестница разведки](docs/discovery-ladder.md) о порядке путей, [политика доступа](docs/access-policy.md) о том, где проходит граница, и [доказательство containment](docs/wave2-containment-proof.md) о том, как измерялось правило браузера.",
-      "license": "MIT. См. [LICENSE](LICENSE)."
+      "license": "MIT. См. [LICENSE](LICENSE).",
+      "compare_header": [
+        "Вариант",
+        "Что это",
+        "Где выполняется",
+        "Карточка источника с отпечатком",
+        "Идет ли за закрытую дверь",
+        "Честный отказ",
+        "Цена"
+      ],
+      "compare_note": "Названия принадлежат их владельцам. Таблица описывает назначение, а не замер: чужие продукты меняются, и обещать за них эта страница не берется."
     },
     "zh": {
       "name": "Lynceuz",
@@ -283,28 +381,67 @@
       "quick_result": "一张表，显示哪些路径现在开着、哪些关着，以及你的第一张结果卡片。",
       "compare": [
         [
-          "Lynceuz",
-          "你需要很多页面，而且之后要说清它们从哪儿来",
-          "内容、一张写明来源和指纹的卡片，以及试过的每一条路",
-          "页面更少：关着的门就是关着的"
+          "**Lynceuz**",
+          "从公开网页收集证据的命令行工具",
+          "在你自己的机器上",
+          "每一页都有",
+          "不闯，关着的门就让它关着",
+          "会，并说出理由",
+          "零"
         ],
         [
-          "付费收集服务",
-          "你要很快拿到大量页面，账单不成问题",
-          "规模，以及别人的访问通道",
-          "每月要付费，来源只能听他们说"
+          "纯手工复制",
+          "浏览器加剪贴板",
+          "在你的浏览器里",
+          "没有",
+          "不闯",
+          "你自己判断",
+          "你的时间"
         ],
         [
-          "自己写的脚本",
-          "任务只针对一个你很熟的站点",
-          "对页面的完全控制",
-          "维护归你，而且通常不留痕迹"
+          "Firecrawl",
+          "按量付费的页面采集 API",
+          "在厂商云端",
+          "没有，只有内容",
+          "有时候，用它自己的通道",
+          "只给错误码，不给理由",
+          "订阅"
         ],
         [
-          "人工复制粘贴",
-          "一个页面，只做一次",
-          "你看见的就是那样",
-          "事后无从核对，到一百页就撑不住了"
+          "Apify、ScrapeGraphAI",
+          "带现成脚本的采集平台",
+          "在厂商云端",
+          "没有",
+          "经常，用它自己的通道",
+          "取决于脚本",
+          "订阅加用量"
+        ],
+        [
+          "Playwright 或 Puppeteer",
+          "你自己写的浏览器脚本",
+          "在你自己的机器上",
+          "自己写了才有",
+          "取决于你能坚持多久",
+          "你自己判断",
+          "你花在修脚本上的时间"
+        ],
+        [
+          "curl 和 jq",
+          "一个普通终端",
+          "在你自己的机器上",
+          "没有",
+          "不闯",
+          "一个状态码，仅此而已",
+          "零"
+        ],
+        [
+          "Wayback Machine、archive.today",
+          "公开的网页存档",
+          "在别人的服务器上",
+          "有快照日期，没有指纹",
+          "不闯",
+          "没有快照时就是空的",
+          "免费"
         ]
       ],
       "glossary": [
@@ -342,7 +479,17 @@
         "没有托管服务，也没有账号。要么在你自己的机器上跑，要么就不跑。"
       ],
       "docs": "继续阅读：[上手指南](docs/ONBOARDING.zh.md)介绍第一次运行，[探索阶梯](docs/discovery-ladder.md)说明路径的排序，[访问策略](docs/access-policy.md)划出边界，[封禁验证](docs/wave2-containment-proof.md)记录浏览器规则是怎么测出来的。",
-      "license": "MIT。见 [LICENSE](LICENSE)。"
+      "license": "MIT。见 [LICENSE](LICENSE)。",
+      "compare_header": [
+        "方案",
+        "这是什么",
+        "在哪里运行",
+        "带指纹的来源卡",
+        "会不会闯关着的门",
+        "诚实拒绝",
+        "价格"
+      ],
+      "compare_note": "名称归各自所有者。这张表描述的是用途，不是实测：别人的产品会变，这个页面不替它们做承诺。"
     }
   }
 }

@@ -1,0 +1,23 @@
+Use case: stylized-concept
+Asset type: prop reference sheet for a project of the Olympuz family, binding for every later frame
+Primary request: one wide sheet that fixes every recurring object of this project, so the same objects can be reproduced identically in every later scene.
+Input images: Image 1 is the immutable Pantheon style reference; Image 2 is the required family-signature column; Image 3 is the approved character sheet of this project and fixes the sealed evidence chest exactly. Every object is carved or cast with real weight and a real profile, not a smooth flat block.
+Subject: a museum plate of separate objects, each standing alone with clear space around it, no figure and no hands anywhere. The objects, in three rows: TOP ROW, left to right - one long rectangular white-marble table with a carved cornice edge and four solid legs; one upright white-marble address stone with a smooth blank face, taller than it is wide; one short white-marble ladder of four rungs, standing upright and leaning against nothing. MIDDLE ROW - one flat pane of clear glass in a thin muted-gold frame, standing on its lower edge; one closed white-marble door in its own frame, with a heavy muted-gold bolt drawn shut across it; one flat white-marble evidence tablet with a smooth blank face, lying flat. BOTTOM ROW - the sealed white-marble evidence chest, closed, with one round muted-gold seal on its front face; one round muted-gold seal alone; one classical white-marble column, shorter than the family signature column.
+Composition/framing: 16:9 landscape. The tall family-signature classical white-marble column stands at the far right, clearly separated from the objects. Three straight rows of objects fill the rest of the frame with generous even spacing, everything fully inside the frame, nothing overlapping, nothing cropped. One sky-blue stream lies flat along the ground under the bottom row, running from the left edge and ending at the foot of the chest.
+Style/medium: premium restrained 3D marble render, monumental carving with a real cornice profile and visible thickness, physically plausible materials, warm ivory Apple-like presentation, museum plate feeling
+Lighting/mood: soft daylight from upper left, long gentle shadows, calm and orderly, identical lighting on every object. The seals, the bolt and the gold frame glow softly FROM WITHIN, as if lit by their own material; nothing is lit by a lamp, a neon tube or a hard rim light, and no surface is left flat and dead.
+Color palette: ivory #F3EFE8, bright ivory #FBFAF6, white marble, muted gold #C9A87A for the seals, the bolt and the glass frame only, sky blue #B8D6EA for the single stream only, charcoal #3E3A36
+Constraints:
+- There is exactly ONE table on this sheet, and it is the table that stands in every later scene of this project: one length, one height, one carved cornice edge, four solid legs.
+- Every object RESTS ON THE GROUND with its full base touching the surface and casting its own soft shadow. Nothing hovers, nothing tilts, nothing balances on a point or an edge.
+- The ladder stands upright on its own two feet and leans against nothing.
+- The door is CLOSED and its gold bolt is drawn fully across, so it plainly cannot be opened.
+- The glass pane stands on its lower edge, leaning very slightly back, and its foot casts a shadow.
+- The chest is closed and its seal is unbroken.
+- The blue stream lies flat on the ground along its whole length and never rises into the air.
+- No figure, no person, no hands, no arms, no faces anywhere on the sheet.
+- Every face of the address stone and the evidence tablet is COMPLETELY BLANK.
+- Marble is carved stone with visible thickness and a soft grain, never a flat gradient, never plastic, never metal.
+- Preserve the reference style; highest final quality; maximum resolution.
+Avoid: any human figure, hands, arms, faces, floating objects, objects balancing on a point, a second table, an open door, a broken seal, a leaning ladder, dark background, black background, neon, purple gradient, smoky cinema lighting, heavy bronze, metallic or plastic marble, watermark, callout labels, measurement marks
+Text (verbatim): No readable text, no letters, no digits, no measurement marks, no callout labels anywhere in the image.

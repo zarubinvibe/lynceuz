@@ -1,7 +1,8 @@
 {
   "schema_version": 3,
   "family_id": "zarubinvibe-pantheon",
-  "catalog_version": "2026-08-31",
+  "catalog_version": "2026-09-03",
+  "dress": "full",
   "project": {
     "slug": "lynceuz",
     "deity": "Lynceus",
@@ -72,6 +73,99 @@
         "diagram_en": "Stop",
         "diagram_ru": "Стоп",
         "diagram_zh": "停下"
+      }
+    ],
+    "bible": {
+      "character_sheet": {
+        "published_path": "docs/assets/pantheon/bible-character.png",
+        "published_sha256": "6176e1c2f11ceaa158ecb3ca6335d18164d55cb36bb7a17d5ea932ff3e0d9f6d",
+        "alt": "Карта персонажа: Линкей из белого мрамора в четырех видах, глаза открыты, правая рука у лба прикрывает взгляд, рядом этюды головы, запечатанного ларца, плитки улики и лестницы"
+      },
+      "prop_sheet": {
+        "published_path": "docs/assets/pantheon/bible-props.png",
+        "published_sha256": "1c0594ed09160d8eec51fa9eb8a400b863d1a025382af1e06ffafe8bae4e6605",
+        "alt": "Карта реквизита: мраморный стол, адресный камень, лестница, стеклянная пластина в золотой раме, дверь на засове, плитка улики, запечатанный ларец, печать и колонна на слоновой кости"
+      }
+    },
+    "takt": {
+      "source_path": "docs/assets/pantheon/takt.png",
+      "source_sha256": "dcec7871c44864e063f8fadc57aa75b438e37312a792eebe0624312e13f8d584",
+      "languages": {
+        "en": {
+          "published_path": "docs/assets/pantheon/takt-en.png",
+          "published_sha256": "b17d768ca11ee7ef0c40124e307b7369a29d4124a0543231f8805edf0b47b01c",
+          "alt": "Five marble plates in one row, each engraved with one step of the run, linked by a blue stream that ends at the sealed evidence chest"
+        },
+        "ru": {
+          "published_path": "docs/assets/pantheon/takt-ru.png",
+          "published_sha256": "07217ec6e7d1d356c8a4373a93d5a5f14495a2398f6833225628dcfd591dee13",
+          "alt": "Пять мраморных плит в ряд, на каждой высечен один шаг прогона, их связывает голубой поток, который заканчивается у запечатанного ларца улик"
+        },
+        "zh": {
+          "published_path": "docs/assets/pantheon/takt-zh.png",
+          "published_sha256": "215dce5256b39d58b04df50269cf929bde4dab703ba014f75fbf43c4d71dcad3",
+          "alt": "五块大理石板排成一行，每块刻着运行中的一步，一条蓝色水流把它们串起来，最后汇入封好印的证据箱"
+        }
+      }
+    },
+    "doc_frames": {
+      "security": {
+        "published_path": "docs/assets/pantheon/doc-security.png",
+        "published_sha256": "db4ee33bd904f126a6546d636ad1a5a7b657375ec19bf1305febb832038c9191",
+        "alt": "Закрытая мраморная дверь на золотом засове, три голубых потока упираются в ее подножие, рядом стоит запечатанный ларец с уликами",
+        "pages": {
+          "en": "SECURITY.md",
+          "ru": "SECURITY.ru.md",
+          "zh": "SECURITY.zh.md"
+        }
+      },
+      "contributing": {
+        "published_path": "docs/assets/pantheon/doc-contributing.png",
+        "published_sha256": "f29ae7ca73a9e232608b14e9c21251f73e5a144849389970bdf03e7822d6bdaf",
+        "alt": "Мраморный стол с чистыми плитками улик, голубой поток от них уходит в запечатанный ларец, рядом со столом стоит лестница бесплатных путей",
+        "pages": {
+          "en": "CONTRIBUTING.md",
+          "ru": "CONTRIBUTING.ru.md",
+          "zh": "CONTRIBUTING.zh.md"
+        }
+      }
+    },
+    "doc_pages": [
+      {
+        "path": "docs/ONBOARDING.md",
+        "frames": [
+          "assets/pantheon/doc-onboarding.png"
+        ]
+      },
+      {
+        "path": "docs/ONBOARDING.ru.md",
+        "frames": [
+          "assets/pantheon/doc-onboarding.png"
+        ]
+      },
+      {
+        "path": "docs/ONBOARDING.zh.md",
+        "frames": [
+          "assets/pantheon/doc-onboarding.png"
+        ]
+      },
+      {
+        "path": "docs/discovery-ladder.md",
+        "frames": [
+          "assets/pantheon/doc-ladder.png"
+        ]
+      },
+      {
+        "path": "docs/access-policy.md",
+        "frames": [
+          "assets/pantheon/doc-door.png"
+        ]
+      },
+      {
+        "path": "docs/wave2-containment-proof.md",
+        "frames": [
+          "assets/pantheon/doc-browser.png"
+        ]
       }
     ]
   },

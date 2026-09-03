@@ -1,0 +1,18 @@
+Use case: stylized-concept
+Asset type: section frame for the discovery-ladder page of a project of the Olympuz family
+Primary request: one wide frame that shows the free routes tried in order, cheapest first.
+Input images: Image 1 is the immutable Pantheon style reference; Image 2 is the required family-signature column; Image 3 is the approved character sheet of this project and fixes the figure exactly; Image 4 is the approved prop sheet and fixes every object exactly. Use the SAME table, the SAME address stone, the SAME ladder, the SAME glass pane, the SAME bolted door, the SAME evidence tablet, the SAME sealed chest that appear on the prop sheet. Nothing is redesigned.
+Subject: four short white-marble ladders stand upright on the ground in one straight row across the middle of the frame, each taller than the one before it, all standing on their own feet and leaning against nothing. One sky-blue stream runs along the ground from the left edge, passes the foot of each ladder in turn, and ends at the sealed marble evidence chest standing closed on the ground at the right end of the row. No figure, no hands.
+Composition/framing: 16:9 landscape. A classical white-marble column stands at the far right, behind the chest. Generous empty ivory space, everything fully inside the frame, nothing overlapping, nothing cropped.
+Style/medium: premium restrained 3D marble render, monumental carving with a real cornice profile and visible thickness, physically plausible materials, warm ivory Apple-like presentation, museum plate feeling
+Lighting/mood: soft daylight from upper left, long gentle shadows, patient, stepwise, methodical. The gold seals, the bolt and the blue streams glow softly FROM WITHIN, as if lit by their own material; nothing is lit by a lamp, a neon tube or a hard rim light, and no surface is left flat and dead.
+Color palette: ivory #F3EFE8, bright ivory #FBFAF6, white marble, muted gold #C9A87A for seals, bolt and metal fittings only, sky blue #B8D6EA for streams only, charcoal #3E3A36
+Constraints:
+- Every object RESTS ON A SURFACE with its full base touching it and casting its own soft shadow. Nothing hovers, nothing balances on a point or an edge.
+- Marble is carved stone with visible thickness and a soft grain, never a flat gradient, never plastic, never metal.
+- Blue streams lie flat along the surface they run on and never rise into the air.
+- Each ladder is taller than the one to its left, and all four stand upright without leaning on anything.
+- No figure, no person, no hands anywhere.
+- Preserve the reference style; highest final quality; maximum resolution.
+Avoid: floating objects, objects balancing on a point, a second table of a different shape, a redesigned chest or seal, an open door, a broken seal, blindfold, closed eyes, scales, sword, owl, helmet, hearth fire, dark background, black background, neon, purple gradient, smoky cinema lighting, heavy bronze, metallic or plastic marble, watermark, callout labels, charts, arrows made of text
+Text (verbatim): No readable text, no letters, no digits, no measurement marks, no callout labels anywhere in the image.

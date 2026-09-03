@@ -25,3 +25,4 @@ __pycache__/
 # Состояние агентов и конвейера - никогда в git
 .helioz/
 graphify-out/
+docs/assets/pantheon/takt-nalozhenie.png
